@@ -278,9 +278,9 @@ const handlePayment = async(e) => {
         <li><Link to="/category/xahang">Xả hàng</Link></li>
       </ul>
     </li>
-    <li><Link to="/">Tuyển dụng</Link></li>
+    {/* <li><Link to="/">Tuyển dụng</Link></li>
     <li><Link to="/">Feedback</Link></li>
-    <li><Link to="/">Liên hệ</Link></li>
+    <li><Link to="/">Liên hệ</Link></li> */}
     <li> 
       <Link to="/Cart">Giỏ hàng <BsFillCartFill/></Link>
       <div className="cart-count">{slsptgh}</div>
