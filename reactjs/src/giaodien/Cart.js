@@ -178,10 +178,9 @@ export default function Cart() {
 <button style={{width:'100%',background: '#fd7e14',   lineHeight: 2,
     textAlign: 'center',boxSizing: 'border-box', fontFamily: 'Roboto, sans-serif',color:'white',fontWeight:550}}>  TIẾN HÀNH THANH TOÁN </button> </Link>
 </div>
-
-
-</div>
-
+      </div>
+    
     </div>
+    
   )
 }

@@ -57,9 +57,6 @@ Route::post('/accountlogin', [homecontroller::class, 'accountlogin']);
 
 Route::get('/categoryproduct','App\Http\Controllers\categoryproductcontroller@index');
 
-Route::post('/checkout/{id}','App\Http\Controllers\checkoutcontroller@index');
-
-
 Route::get('/dondathang','App\Http\Controllers\dondathangcontroller@index');
 Route::get('/homedashboard','App\Http\Controllers\dashboardcontroller@index');
 Route::get('/thongtinkhachhang','App\Http\Controllers\dkdncontroller@index');

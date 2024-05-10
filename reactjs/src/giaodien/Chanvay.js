@@ -1,19 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import '../App.css'
-import Bosuutapmoi from "./Bosuutapmoi";
-import {AiFillCaretDown} from 'react-icons/ai'
-import {BsFillCartFill} from 'react-icons/bs'
-
-import { Link } from "react-router-dom";
-
-import axios from 'axios';
-
+import ProductCategory from "./ProductCategory";
 
 
 function Chanvay() {
   return(
 <div>
-  <Bosuutapmoi/>  
+  <ProductCategory brand = "chanvay"/>  
 </div>
   );
 
