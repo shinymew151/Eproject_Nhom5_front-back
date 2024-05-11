@@ -491,7 +491,7 @@ const handlePayment = async(e) => {
   </div>
 )}
 
-<button style={{marginTop:15}} onClick={handleSubmit}>đặt hàng</button>
+<button style={{marginTop:15}} onClick={handleSubmit}>Đặt hàng</button>
 
     </div>
   

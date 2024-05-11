@@ -37,6 +37,7 @@ export default function Navbar(){
         <div>
         <ul id="header">
           <li><Link to="/">Giới thiệu</Link></li>
+          <li><Link to="/">Góc cửa hàng</Link></li>
           <li id="down1">
             <Link to="/">Sản phẩm <AiFillCaretDown /></Link>
             <ul id="dc1">
@@ -45,9 +46,8 @@ export default function Navbar(){
               <li><Link to="/category/vaydamcongso">Váy đầm công sở</Link></li>
             </ul>
           </li>
-          <li><Link to="/">Góc cửa hàng</Link></li>
           <li id="down2">
-            <Link to="/">Hot Deal <AiFillCaretDown /></Link>
+            <Link to="/">Sản phẩm bán chạy <AiFillCaretDown /></Link>
             <ul id="dc2">
               <li><Link to="/category/bosuutapmoi">Bộ sưu tập mới</Link></li>
               <li><Link to="/category/somichanvay">Sơ mi chân váy</Link></li>
@@ -55,12 +55,9 @@ export default function Navbar(){
               <li><Link to="/category/xahang">Xả hàng</Link></li>
             </ul>
           </li>
-          {/* <li><Link to="/">Tuyển dụng</Link></li>
-          <li><Link to="/">Feedback</Link></li>
-          <li><Link to="/">Liên hệ</Link></li> */}
          
           <li> 
-            <Link to="/Cart">Giỏ hàng <BsFillCartFill/></Link>
+            <Link to="/Cart">Gỉo hàng <BsFillCartFill/></Link>
             <div className="cart-count">{slsptgh}</div>
            </li>
            
@@ -73,7 +70,7 @@ export default function Navbar(){
                 <>
                   <li>Xin chào: {user.name}</li>
                   <li>
-                    <button onClick={handleLogout} style={{with: 150,height:42,fontSize:12,float:'left'}}>
+                    <button onClick={handleLogout} class="button-38">
                       <Link to="/account/login">Đăng xuất</Link>
                     </button>
                   </li>
