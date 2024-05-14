@@ -1,61 +1,12 @@
-import React, { useState, useEffect } from "react";
 import '../../App.css'
-import {AiFillCaretDown} from 'react-icons/ai'
-import {BsFillCartFill} from 'react-icons/bs'
-import axios from "axios";
 import { Link } from "react-router-dom";
+import Navbar from '../HomePage/Navbar';
+import Footer from '../HomePage/Footer';
 export default function Cctpsm() {
-
-    const userData = localStorage.getItem('userData');
-    const user = userData ? JSON.parse(userData).user : null;
-    const userId = user ? user.id : null;
-    const [slsptgh,setslsptgh] = useState(0);
-    useEffect(() => {
-      axios.get(`${process.env.REACT_APP_BASEURL}/api/users/${userId}/slsptgh`)
-        .then((response) => {
-          setslsptgh(response.data); 
-    
-        })
-        .catch((error) => {
-          console.log(error); // Kiểm tra xem có lỗi xảy ra hay không
-        });
-    }, []);
 
   return (
     <div>
-         <div>
-  <ul id="header">
-    <li><Link to="/">Giới thiệu</Link></li>
-    <li id="down1">
-      <Link to="/">Sản phẩm <AiFillCaretDown /></Link>
-      <ul id="dc1">
-        <li><Link to="/category/sominu">Sơ mi nữ</Link></li>
-        <li><Link to="/category/chanvay">Chân váy</Link></li>
-        <li><Link to="/category/vaydamcongso">Váy đầm công sở</Link></li>
-      </ul>
-    </li>
-    <li><Link to="/">Góc cửa hàng</Link></li>
-    <li id="down2">
-      <Link to="/">Hot Deal <AiFillCaretDown /></Link>
-      <ul id="dc2">
-        <li><Link to="/category/bosuutapmoi">Bộ sưu tập mới</Link></li>
-        <li><Link to="/category/somichanvay">Sơ mi chân váy</Link></li>
-        <li><Link to="/category/sandouudai">Săn đồ ưu đãi</Link></li>
-        <li><Link to="/category/xahang">Xả hàng</Link></li>
-      </ul>
-    </li>
-    <li><Link to="/">Tuyển dụng</Link></li>
-    <li><Link to="/">Feedback</Link></li>
-    <li><Link to="/">Liên hệ</Link></li>
-   
-    <li> 
-      <Link to="/Cart">Giỏ hàng <BsFillCartFill/></Link>
-      <div className="cart-count">{slsptgh}</div>
-     </li>
-     
-  </ul>
-</div>
-
+         <Navbar/>
 <div className="cointainerhrct" style={{display:'flex',margin:'0 auto',justifyContent:'center'}}>
     <div className="lefthrct" style={{width:'25%'}}>
         <h4>BÀI VIẾT MỚI</h4>
@@ -132,7 +83,7 @@ Nếu các nàng có vóc dáng thuộc dáng người như thế này, thì mì
     </span>
     </div>
 </div>
-
+            <Footer/>
     </div>
   )
 }

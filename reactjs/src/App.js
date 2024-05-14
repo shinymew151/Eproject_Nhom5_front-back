@@ -1,24 +1,24 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Homeadmin from './admin/Homeadmin';
-import Home from './giaodien/Home';
-import Detail from './giaodien/Detail';
+import Home from '../src/giaodien/HomePage/Home';
+import Detail from '../src/giaodien/ProductPage/Detail';
 
 import Dangnhapadmin from './admin/Dangnhapadmin';
 
-import Dk from './giaodien/Dangki';
-import Dn from './giaodien/Dangnhap';
+import Dk from '../src/giaodien/HomePage/Dangki';
+import Dn from '../src/giaodien/HomePage/Dangnhap';
 
 import Product from './admin/Product';
 import Detail_product from './admin/Detail_product';
-import Cart from './giaodien/Cart';
-import Thanhtoan from './giaodien/Thanhtoan';
-import Sominu from './giaodien/Sominu';
-import Chanvay from './giaodien/Chanvay';
-import Vaydamcongso from './giaodien/Vaydamcongso';
-import Bosuutapmoi from './giaodien/Bosuutapmoi';
-import Somichanvay from './giaodien/Somichanvay';
-import Sandouudai from './giaodien/Sandouudai';
-import Xahang from './giaodien/Xahang';
+import Cart from '../src/giaodien/ThanhToan/Cart';
+import Thanhtoan from '../src/giaodien/ThanhToan/Thanhtoan';
+import Sominu from '../src/giaodien/ProductPage/Sominu';
+import Chanvay from '../src/giaodien/ProductPage/Chanvay';
+import Vaydamcongso from '../src/giaodien/ProductPage/Vaydamcongso';
+import Bosuutapmoi from '../src/giaodien/ProductPage/Bosuutapmoi';
+import Somichanvay from '../src/giaodien/ProductPage/Somichanvay';
+import Sandouudai from '../src/giaodien/ProductPage/Sandouudai';
+import Xahang from '../src/giaodien/ProductPage/Xahang';
 import Dondathang from './admin/Dondathang';
 import Thongtinkh from './admin/Thongtinkh';
 
@@ -29,7 +29,7 @@ import Dlmj from './giaodien/thegioicuaphaidep/Dlmj';
 import Nbvanvddx from './giaodien/thegioicuaphaidep/Nbvanvddx';
 import Sdttt from './giaodien/thegioicuaphaidep/Sdttt';
 import Vdcscc from './giaodien/thegioicuaphaidep/Vdcscc';
-import Kiemtradon from './giaodien/Kiemtradon';
+import Kiemtradon from '../src/giaodien/ThanhToan/Kiemtradon';
 
 
 

@@ -351,7 +351,6 @@ overflow-x: scroll;
 
 #login-register ul li {
   font-weight: 600;
-  padding-right: 5px;
 }
 
 .slidechung::-webkit-scrollbar {
@@ -1090,4 +1089,10 @@ height: 100%;
 
 .button-38:focus-visible {
   box-shadow: none;
+}
+
+.signup_form{
+  margin-top: 15px;
+  margin-right: 300px;
+  margin-left: 300px;
 }

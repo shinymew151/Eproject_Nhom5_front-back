@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import '../App.css'
+import '../../App.css'
 import { HiShoppingCart } from 'react-icons/hi'
 import { BsFillAlarmFill } from 'react-icons/bs'
 import { FaLock } from 'react-icons/fa'

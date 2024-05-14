@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import '../App.css'
-import Navbar from "./Navbar";
+import '../../App.css'
+import Navbar from "../HomePage/Navbar";
 import { Link } from "react-router-dom";
 import axios from 'axios';
-import Footer from "./Footer";
+import Footer from "../HomePage/Footer";
 
 
 export default function ProductCategory(props) {
