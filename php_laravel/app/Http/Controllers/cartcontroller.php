@@ -24,7 +24,7 @@ class cartcontroller extends Controller
             ->orderBy('id', 'DESC')
             ->get();
         
-        return response()->json($cart);
+         return response()->json($cart);
     }
     /**
      * Show the form for creating a new resource.
