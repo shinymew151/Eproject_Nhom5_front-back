@@ -59,7 +59,7 @@ const xoasp = (id)=>{
         'content-type': 'multipart/form-data'
       }
     });
-    alert("Đã thêm sản phẩm thành công");
+    alert("Product added successfully");
     sethinhanh("");
     settitle("");
     setgia("");
@@ -69,7 +69,7 @@ const xoasp = (id)=>{
     // Di chuyển file hình ảnh vào thư mục public/upload
   
   } catch (err) {
-    alert("Thêm sản phẩm thất bại");
+    alert("Failed to add product");
   }
 }
 

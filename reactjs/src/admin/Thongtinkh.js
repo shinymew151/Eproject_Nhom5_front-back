@@ -20,7 +20,7 @@ export default function Thongtinkh() {
     },[])
 const handledelete = (id)=>{
     axios.delete(`${process.env.REACT_APP_BASEURL}/api/thongtinkhachhang/${id}`)
-    alert('Xóa thành công');
+    alert('xóa thành công');
     window.location.reload();
 }
    
@@ -32,17 +32,17 @@ const handledelete = (id)=>{
         <Sidebar />
         <div className='custom-margin-top'>
         <div className='custom-margin-top'>
-        <h2>Danh sách đơn hàng đã đặt</h2>
+        <h2>danh sách đơn hàng đã đặt</h2>
 
 <table class="table">
   <thead>
     <tr>
-      <th scope="col">Email</th>
-      <th scope="col">Mật khẩu</th>
-      <th scope="col">Họ tên</th>
-      <th scope="col">Số điện thoại</th>
+      <th scope="col">email</th>
+      <th scope="col">mật khẩu</th>
+      <th scope="col">họ tên</th>
+      <th scope="col">số điện thoại</th>
     
-      <th scope="col">Xóa</th>
+      <th scope="col">xóa</th>
     </tr>
   </thead>
   <tbody>
@@ -55,6 +55,7 @@ const handledelete = (id)=>{
                 <td>{donhang.password}</td>
                 <td>{donhang.name}</td>
                 <td>{donhang.sdt}</td>
+              
                 <td><button onClick={()=>handledelete(donhang.id)}><FaTrashAlt/></button></td>
               </tr>
             );
