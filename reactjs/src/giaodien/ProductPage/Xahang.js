@@ -1,16 +1,16 @@
 import React from "react";
-import '../App.css'
+import '../../App.css'
 import ProductCategory from "./ProductCategory";
 
 
-function Sominu() {
+function Xahang() {
   return(
 <div>
-  <ProductCategory brand = "sominu"/>  
+  <ProductCategory brand = "xahang"/>  
 </div>
   );
 
 
 }
 
-export default Sominu;
+export default Xahang;

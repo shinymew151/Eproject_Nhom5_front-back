@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import '../App.css'
+import '../../App.css'
 import {RiUserSearchFill} from 'react-icons/ri'
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import Navbar from "../HomePage/Navbar";
+import Footer from "../HomePage/Footer";
 
 
 export default function Kiemtradon() {

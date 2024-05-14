@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from "react";
-import '../App.css'
-import {AiFillCaretDown} from 'react-icons/ai'
-import {BsFillCartFill} from 'react-icons/bs'
-
-import {FaTrashAlt} from 'react-icons/fa'
+import '../../App.css'
 import { Link, useParams } from "react-router-dom";
 import axios from "axios";
 import { useNavigate } from 'react-router-dom';
+import Navbar from "../HomePage/Navbar";
+import Footer from "../HomePage/Footer";
 
 export default function Thanhtoan() {
   const [formData, setFormData] = useState(new FormData());
@@ -38,10 +36,6 @@ const [phuongxa, setPhuongxa] = useState('');
   const user = userData ? JSON.parse(userData).user : null;
   const userId = user ? user.id : null;
 
-const handleLogout = ()=>{
- 
-  localStorage.removeItem('userData');
-};
   const [hovaten,sethovaten] = useState("");
   const [diachi,setdiachi] = useState("");
   const tinhtrangdon= "Chờ duyệt";
@@ -256,58 +250,7 @@ const handlePayment = async(e) => {
 
   return (
     <div>
-      <div id="">
-  <div>
-  <ul id="header">
-    <li><Link to="/">Giới thiệu</Link></li>
-    <li id="down1">
-      <Link to="/">Sản phẩm <AiFillCaretDown /></Link>
-      <ul id="dc1">
-        <li><Link to="/category/sominu">Sơ mi nữ</Link></li>
-        <li><Link to="/category/chanvay">Chân váy</Link></li>
-        <li><Link to="/category/vaydamcongso">Váy đầm công sở</Link></li>
-      </ul>
-    </li>
-    <li><Link to="/">Góc cửa hàng</Link></li>
-    <li id="down2">
-      <Link to="/">Hot Deal <AiFillCaretDown /></Link>
-      <ul id="dc2">
-        <li><Link to="/category/bosuutapmoi">Bộ sưu tập mới</Link></li>
-        <li><Link to="/category/somichanvay">Sơ mi chân váy</Link></li>
-        <li><Link to="/category/sandouudai">Săn đồ ưu đãi</Link></li>
-        <li><Link to="/category/xahang">Xả hàng</Link></li>
-      </ul>
-    </li>
-    {/* <li><Link to="/">Tuyển dụng</Link></li>
-    <li><Link to="/">Feedback</Link></li>
-    <li><Link to="/">Liên hệ</Link></li> */}
-    <li> 
-      <Link to="/Cart">Giỏ hàng <BsFillCartFill/></Link>
-      <div className="cart-count">{slsptgh}</div>
-     </li>
-  </ul>
-</div>
-
-<div id="login-register">
-          <ul>
-            {user ? (
-              <>
-                <li>Xin chào: {user.name}</li>
-                <li>
-                  <button onClick={handleLogout} style={{with: 150,height:42,fontSize:12,float:'left'}}> <Link to="/account/login"> Đăng xuất </Link></button>
-                </li>
-              </>
-            ) : (
-              <>
-                <li><Link to="/account/login">Đăng nhập/</Link></li>
-                <li><Link to="/account/register">Đăng ký</Link></li>
-              </>
-            )}
-          </ul>
-        </div>
-
-
-</div>
+      <Navbar/>
 
 <div className="thanhtoancontainer" style={{display:'flex',margin:'0 auto',justifyContent:'center'}}>
   <div className="thanhtoanleft" style={{width:600}}>
@@ -494,64 +437,9 @@ const handlePayment = async(e) => {
 <button style={{marginTop:15}} onClick={handleSubmit}>Đặt hàng</button>
 
     </div>
-  
 </div>
-<div class="footer">
-    <div class="footer-container">
-        <div class="footer-column">
-            <h2 class="footer-subheading">Managed Website</h2>
-            <a href="#" class="footer-link">Manage Reputation</a>
-            <a href="#" class="footer-link">Power Tools</a>
-            <a href="#" class="footer-link">Marketing Service</a>
-        </div>
-        <div class="footer-column">
-            <h2 class="footer-subheading">Jobs</h2>
-            <a href="#" class="footer-link">Brand Assets</a>
-            <a href="#" class="footer-link">Investor Relations</a>
-            <a href="#" class="footer-link">Terms of Service</a>
-        </div>
-        <div class="footer-column">
-            <h2 class="footer-subheading">Contact Us</h2>
-            <a href="#" class="footer-link">Uttar Pradesh</a>
-            <a href="#" class="footer-link">Ahemdabad</a>
-            <a href="#" class="footer-link">Indore</a>
-            <a href="#" class="footer-link">Mumbai</a>
-        </div>
-        <div class="footer-column">
-            <h2 class="footer-subheading">Social Media</h2>
-            <a href="#" class="footer-link">
-                <i class="fab fa-facebook-f"></i>
-                <span>Facebook</span>
-            </a>
-            <a href="#" class="footer-link">
-                <i class="fab fa-instagram"></i>
-                <span>Instagram</span>
-            </a>
-            <a href="#" class="footer-link">
-                <i class="fab fa-twitter"></i>
-                <span>Twitter</span>
-            </a>
-            <a href="#" class="footer-link">
-                <i class="fab fa-youtube"></i>
-                <span>Youtube</span>
-            </a>
-        </div>
-    </div>
+<Footer/>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-</div>
-
-
-   
   )
 }

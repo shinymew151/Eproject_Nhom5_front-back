@@ -1,13 +1,10 @@
 import React, { useState, useEffect } from "react";
-import '../App.css'
+import '../../App.css'
 import {AiFillCaretDown} from 'react-icons/ai'
 import {BsFillCartFill} from 'react-icons/bs'
-
 import {FaTrashAlt} from 'react-icons/fa'
 import { Link } from "react-router-dom";
 import axios from "axios";
-
-
 
 export default function Cart() {
   const [slsptgh,setslsptgh] = useState(0);
