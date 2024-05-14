@@ -115,6 +115,6 @@ class dondathangcontroller extends Controller
 
         $deleteddh->delete();
 
-        return response()->json(['message' => 'xóa success']);
+        return response()->json(['message' => 'Xóa thành công ']);
     }
 }

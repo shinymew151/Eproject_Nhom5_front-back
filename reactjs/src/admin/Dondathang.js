@@ -25,7 +25,7 @@ export default function Dondathang() {
     try {
       await axios.delete(`${process.env.REACT_APP_BASEURL}/api/admindeletedondathang/${id}`);
       fetchData();
-      alert('Xóa sản phẩm thành công');
+      alert('Xóa đơn hàng thành công');
     } catch (error) {
       console.log(error);
     }

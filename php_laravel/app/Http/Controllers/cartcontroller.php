@@ -18,7 +18,7 @@ class cartcontroller extends Controller
     public function index($userid)
     { 
         $product = product::all();
-       
+
         $cart = cart::with('product', 'dkdn')
             ->where('dkdn_id', $userid) // Update variable name here
             ->orderBy('id', 'DESC')
