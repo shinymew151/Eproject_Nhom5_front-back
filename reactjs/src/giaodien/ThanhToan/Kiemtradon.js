@@ -10,7 +10,7 @@ export default function Kiemtradon() {
     <div>  
       <Navbar/>
           <div className="containerkiemtradon" style={{display:'flex'}}>
-             <div className="leftkiemtradon" style={{width:'30%',background:'red',height:250,marginTop:-55,marginLeft:60,fontSize:200}}>
+             <div class="leftkiemtradon">
                  <RiUserSearchFill/>
              </div>
              <div className="rightkiemtradon" style={{ width: '60%', background: 'yellow', marginLeft: 15 }}>

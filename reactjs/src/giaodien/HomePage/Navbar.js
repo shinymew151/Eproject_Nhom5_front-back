@@ -56,11 +56,15 @@ export default function Navbar(){
             </ul>
           </li>
          
+          <li>
+            <Link to="/kiemtradon">CheckOut</Link>
+           </li>
+
           <li> 
             <Link to="/Cart">Gỉo hàng <BsFillCartFill/></Link>
             <div className="cart-count">{slsptgh}</div>
            </li>
-           
+
         </ul>
       </div>
       

@@ -21,7 +21,6 @@ import Sandouudai from '../src/giaodien/ProductPage/Sandouudai';
 import Xahang from '../src/giaodien/ProductPage/Xahang';
 import Dondathang from './admin/Dondathang';
 import Thongtinkh from './admin/Thongtinkh';
-
 import Hrctddhmn from './giaodien/thegioicuaphaidep/Hrctmddhmn';
 import Cctpsm from './giaodien/thegioicuaphaidep/Cctpsm';
 import Cdcvbc from './giaodien/thegioicuaphaidep/Cdcvbc';
@@ -30,13 +29,7 @@ import Nbvanvddx from './giaodien/thegioicuaphaidep/Nbvanvddx';
 import Sdttt from './giaodien/thegioicuaphaidep/Sdttt';
 import Vdcscc from './giaodien/thegioicuaphaidep/Vdcscc';
 import Kiemtradon from '../src/giaodien/ThanhToan/Kiemtradon';
-
-
-
-
-
-
-
+import Checkout from './giaodien/ThanhToan/Checkout';
 
 function App() {
 
@@ -53,8 +46,7 @@ function App() {
           <Route path="/Cart" element={<Cart />} />
           <Route path="/Thanhtoan" element={<Thanhtoan />} />
           <Route path="/kiemtradon" element={<Kiemtradon />} />
-         
-
+          <Route path="/checkout" element={<Checkout />} />
           <Route path="/category/sominu" element={<Sominu />} />
           <Route path="/category/chanvay" element={<Chanvay />} />
           <Route path="/category/vaydamcongso" element={<Vaydamcongso />} />

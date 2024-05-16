@@ -50,18 +50,18 @@ export default function Dangki() {
 <div class="container">
 <div class="panel panel-primary">
     <div class="panel-heading">
-        <h2 class="text-center">ĐĂNG KÍ</h2>
+        <h2 class="text-center">ĐĂNG KÝ</h2>
     </div>
     <div class="panel-body">
         <form onSubmit={save}>
         <div class="signup_form">
-          <label style={{float:'left', fontWeight:500}} for="usr">Full Name *</label>
+          <label style={{float:'left', fontWeight:500}} for="usr">Họ Tên *</label>
           <input value={name} onChange={(e)=>setname(e.target.value)} required="true" type="text" class="form-control" id="usr"/>
          
         </div>
 
         <div class="signup_form">
-          <label style={{float:'left', fontWeight:500}} for="address">Số điện thoại *</label>
+          <label style={{float:'left', fontWeight:500}} for="address">Số Điện Thoại *</label>
           <input value={sdt} onChange={(e)=>setsdt(e.target.value)} type="text" class="form-control" id="address"/>
         </div>
 
@@ -77,7 +77,7 @@ export default function Dangki() {
         </div>
        
        
-        <button class="btn btn-success">Register</button>
+        <button class="btn btn-success">Đăng Ký</button>
         </form>
     </div>
     

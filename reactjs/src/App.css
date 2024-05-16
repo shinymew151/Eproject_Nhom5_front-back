@@ -85,6 +85,7 @@ ul #dc2 a:hover {
 #header {
   padding-top: 15px;
   height: 60px;
+  padding-right: 40px;
 }
 
 #header li a {
@@ -1095,4 +1096,13 @@ height: 100%;
   margin-top: 15px;
   margin-right: 300px;
   margin-left: 300px;
+}
+
+.leftkiemtradon{
+width:'30%';
+background:'red';
+height:250;
+margin-top:-55;
+margin-left:60;
+font-size:200
 }

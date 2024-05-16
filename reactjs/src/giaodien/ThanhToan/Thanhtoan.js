@@ -366,7 +366,7 @@ const handlePayment = async(e) => {
 <div className="thongtinbosung">
   <span style={{float:'left',color:'blue'}}>THÔNG TIN BỔ SUNG</span><br></br>
   <span style={{float:'left'}}>Ghi chú đơn hàng (thời gian nhận hàng,nơi nhận)</span><br></br>
-  <textarea  value={thongtinbosung} onChange={(e) => setthongtinbosung(e.target.value)} style={{float:'left'}} name="" id="" cols="78" rows="8"></textarea>
+  <textarea  value={thongtinbosung} onChange={(e) => setthongtinbosung(e.target.value)} style={{float:'left'}} name="" id="" cols="78" rows="7"></textarea>
 </div>
 </form>
 
@@ -417,9 +417,9 @@ const handlePayment = async(e) => {
           <label htmlFor="cash-on-delivery">Trả tiền mặt khi nhận hàng</label>
         </div>
         <div>
-          {/* <input type="checkbox" id="bank-transfer"   checked={isBankTransfer}
+          <input type="checkbox" id="bank-transfer"   checked={isBankTransfer}
           onClick={handleBankTransferChange}/>
-          <label htmlFor="bank-transfer">Chuyển khoản ngân hàng</label> */}
+          <label htmlFor="bank-transfer">Chuyển khoản ngân hàng</label>
         </div>
       </div>
     </div>

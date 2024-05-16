@@ -27,10 +27,10 @@ export default function Dangnhap() {
       const userDataJSON = JSON.stringify(userData); // Chuyển đối tượng thành chuỗi JSON
   
       localStorage.setItem('userData', userDataJSON); // Lưu chuỗi JSON vào localStorage
-      alert("Login successful");
+      alert("Đăng Nhập Thành Công");
      navigate('/');
     } else {
-      alert("Login failed");
+      alert("Đăng Nhập Thất Bại");
     }
   
 
@@ -52,7 +52,7 @@ export default function Dangnhap() {
 <div class="container">
 <div class="panel panel-primary">
     <div class="panel-heading">
-        <h2 class="text-center">Đăng nhập</h2>
+        <h2 class="text-center">Đăng Nhập</h2>
     </div>
     <div className="login-form">
     <form onSubmit={handleLogin}>
@@ -72,7 +72,7 @@ export default function Dangnhap() {
         onChange={(e) => setPassword(e.target.value)}
       />
       <br />
-      <button type="submit">Login</button>
+      <button type="submit">Đăng Nhập</button>
     </form>
   </div>
 </div>
