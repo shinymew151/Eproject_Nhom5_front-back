@@ -14,11 +14,11 @@ function BlogNews(props){
                
                 <tr style={{height:70,border: '1px solid black'}}>
                     <td><img style={{width:40,height:40,borderRadius:'50%'}} src="https://statics.pancake.vn/web-media/f4/26/6d/06/def0ccf4c96da793fe00085976c3dc5d3cbe366d7415d744d1266284.png" alt="" /></td>
-                    <th><Link to="/hrctddhmn">hiểu rõ cơ thể để đẹp hơn mỗi ngày</Link></th>
+                    <th><Link to="/hrctddhmn">Hiểu rõ cơ thể để đẹp hơn mỗi ngày</Link></th>
                 </tr>
                 <tr style={{height:70,border: '1px solid black'}}>
                     <td><img style={{width:40,height:40,borderRadius:'50%'}} src="https://statics.pancake.vn/web-media/f4/26/6d/06/def0ccf4c96da793fe00085976c3dc5d3cbe366d7415d744d1266284.png" alt="" /></td>
-                    <th><Link to="/nbvanvddx">NỔI BẬT VÀ ẤN TƯỢNG VỚI ĐẦM DÁNG XÒE !!!</Link></th>
+                    <th><Link to="/nbvanvddx">Nổi bật và ấn tượng với đầm dáng xòe !!!</Link></th>
                 </tr>
                 <tr style={{height:70,border: '1px solid black'}}>
                     <td><img style={{width:40,height:40,borderRadius:'50%'}} src="https://statics.pancake.vn/web-media/f4/26/6d/06/def0ccf4c96da793fe00085976c3dc5d3cbe366d7415d744d1266284.png" alt="" /></td>
@@ -26,7 +26,7 @@ function BlogNews(props){
                 </tr>
                 <tr style={{height:70,border: '1px solid black'}}>
                     <td><img style={{width:40,height:40,borderRadius:'50%'}} src="https://statics.pancake.vn/web-media/f4/26/6d/06/def0ccf4c96da793fe00085976c3dc5d3cbe366d7415d744d1266284.png" alt="" /></td>
-                    <th><Link to="/sdttt">SẮC ĐỎ TRONG THỜI TRANG</Link></th>
+                    <th><Link to="/sdttt">Sắc đỏ trong thời trang</Link></th>
                 </tr>
                 <tr style={{height:70,border: '1px solid black'}}>
                     <td><img style={{width:40,height:40,borderRadius:'50%'}} src="https://statics.pancake.vn/web-media/f4/26/6d/06/def0ccf4c96da793fe00085976c3dc5d3cbe366d7415d744d1266284.png" alt="" /></td>
@@ -34,11 +34,11 @@ function BlogNews(props){
                 </tr>
                 <tr style={{height:70,border: '1px solid black'}}>
                     <td><img style={{width:40,height:40,borderRadius:'50%'}} src="https://statics.pancake.vn/web-media/f4/26/6d/06/def0ccf4c96da793fe00085976c3dc5d3cbe366d7415d744d1266284.png" alt="" /></td>
-                    <th><Link to="/dlmj">ĐI LÀM MẶC GÌ?</Link></th>
+                    <th><Link to="/dlmj">Đi làm mặc gì?</Link></th>
                 </tr>
                 <tr style={{height:70,border: '1px solid black'}}>
                     <td><img style={{width:40,height:40,borderRadius:'50%'}} src="https://statics.pancake.vn/web-media/f4/26/6d/06/def0ccf4c96da793fe00085976c3dc5d3cbe366d7415d744d1266284.png" alt="" /></td>
-                    <th><Link to="/vdcscc">VÁY ĐẦM CÔNG SỞ CAO CẤP: CỰC SANG TRỌNG VÀ TINH TẾ</Link></th>
+                    <th><Link to="/vdcscc">Váy đầm công sở cao cấp: Cực sang trọng và tinh tế</Link></th>
                 </tr>
     
               </table>
