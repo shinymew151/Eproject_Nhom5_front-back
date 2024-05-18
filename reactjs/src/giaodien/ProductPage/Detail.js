@@ -18,7 +18,6 @@ const [slsp, setslsp] = useState(1);
 
 const [message, setMessage] = useState('');
 const [detailtong,setdetailtong] = useState(0);
-const [slsptgh,setslsptgh] = useState(0);
 
   const [position, setPosition] = useState(0);
   
@@ -33,10 +32,7 @@ const [slsptgh,setslsptgh] = useState(0);
     const user = userData ? JSON.parse(userData).user : null;
     const userId = user ? user.id : null;
 
-const handleLogout = ()=>{
- 
-  localStorage.removeItem('userData');
-};
+
   const handleSizeClick = (size) => {
     setSelectedSize(size, () => {
       console.log(selectedSize);
@@ -317,7 +313,7 @@ if (!detail) {
     <p style={{fontSize:19,float:'left'}}><TiMinus/>Miễn phí vận chuyển với đơn hàng có giá trị trên 599K<br></br>
 <TiMinus/>Giao hàng toàn quốc từ 2-4 ngày làm việc<br></br>
 <TiMinus/>Đổi trả sản phẩm trong 7 ngày, từ ngày nhận được sản phẩm<br></br>
-<TiMinus/>Hotline & Zalo hỗ trợ KH: 0984196426</p>
+<TiMinus/>Hotline & Zalo hỗ trợ KH: 0372454024</p>
  
 </div>
 

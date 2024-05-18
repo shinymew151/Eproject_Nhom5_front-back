@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('sanpham');
             $table->integer('sotien');
             $table->string('nganhang');
-          
             $table->timestamps();
         });
     }
