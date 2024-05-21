@@ -1,6 +1,6 @@
 import '../../App.css'
-import BlogNews from '../thegioicuaphaidep/BlogNews';
-export default function Cctpsm() {
+import BlogNews from './BlogNews';
+export default function MatchingShirt() {
 
   return (
     <div>

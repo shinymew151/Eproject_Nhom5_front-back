@@ -1,6 +1,6 @@
 import '../../App.css'
-import BlogNews from '../thegioicuaphaidep/BlogNews';
-export default function Nbvanvddx() {
+import BlogNews from './BlogNews';
+export default function DressDesign() {
 
     return (
         <div>

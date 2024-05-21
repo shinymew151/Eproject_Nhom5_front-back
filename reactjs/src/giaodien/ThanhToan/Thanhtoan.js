@@ -372,7 +372,7 @@ const handlePayment = async(e) => {
 
 
   </div>
-  <div className="thanhtoanright" style={{ width: 500, marginLeft: 20, border: '2px solid black', marginBottom:'10px' }}>
+  <div className="thanhtoanright" style={{ width: 520, marginLeft: 20, border: 'none', marginBottom:'10px',position:'relative' }}>
   <div className="don-hang">
     <h4 style={{marginLeft:'-25px'}}>Đơn hàng của bạn</h4>
     <div className="abcxyzthanhtoan">
@@ -430,11 +430,11 @@ const handlePayment = async(e) => {
     <select name="paymentMethod" id="paymentMethod">
       <option value="vnpay">Thanh toán qua VNPAY</option>
     </select>
-    <button onClick={handlePayment}><Link to="/checkout"> Thanh toán </Link></button>
+    <button style={{justifyContent:'center',textAlign:'center',border: "1px solid",borderRadius:"10px", marginLeft:10}}onClick={handlePayment}><Link to="/checkout"> Thanh toán </Link></button>
   </div>
 )}
 
-<button style={{marginTop:15}} onClick={handleSubmit}>Đặt hàng</button>
+<button style={{margin:'0 auto',justifyContent:'center',textAlign:'center',border: "1px solid",borderRadius:"10px", width:'70%', marginTop:35}} onClick={handleSubmit}>Đặt hàng</button>
 
     </div>
 </div>

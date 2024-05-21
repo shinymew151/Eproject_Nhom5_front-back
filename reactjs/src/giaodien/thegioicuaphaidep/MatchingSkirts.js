@@ -1,6 +1,6 @@
 import '../../App.css'
 import BlogNews from './BlogNews'
-export default function Cdcvbc() {
+export default function MatchingSkirts() {
 
 
   return (

@@ -10,41 +10,41 @@ function BlogNews(props){
         <div className="cointainerhrct" style={{display:'flex',margin:'0 auto',justifyContent:'center'}}>
         <div className="lefthrct" style={{width:'25%'}}>
             <h4>BÀI VIẾT MỚI</h4>
-            <table style={{border: '1px solid gray'}}>
+            <table style={{marginRight:'25px'}}>
                
-                <tr style={{height:70,border: '1px solid black'}}>
+                <tr style={{height:70}}>
                     <td><img style={{width:40,height:40,borderRadius:'50%'}} src="https://statics.pancake.vn/web-media/f4/26/6d/06/def0ccf4c96da793fe00085976c3dc5d3cbe366d7415d744d1266284.png" alt="" /></td>
-                    <th><Link to="/hrctddhmn">Hiểu rõ cơ thể để đẹp hơn mỗi ngày</Link></th>
+                    <th><Link style={{textDecoration:'none'}} to="/MatchingDress">Hiểu rõ cơ thể để đẹp hơn mỗi ngày</Link></th>
                 </tr>
-                <tr style={{height:70,border: '1px solid black'}}>
+                <tr style={{height:70}}>
                     <td><img style={{width:40,height:40,borderRadius:'50%'}} src="https://statics.pancake.vn/web-media/f4/26/6d/06/def0ccf4c96da793fe00085976c3dc5d3cbe366d7415d744d1266284.png" alt="" /></td>
-                    <th><Link to="/nbvanvddx">Nổi bật và ấn tượng với đầm dáng xòe !!!</Link></th>
+                    <th><Link style={{textDecoration:'none'}} to="/DressDesign">Nổi bật và ấn tượng với đầm dáng xòe !!!</Link></th>
                 </tr>
-                <tr style={{height:70,border: '1px solid black'}}>
+                <tr style={{height:70}}>
                     <td><img style={{width:40,height:40,borderRadius:'50%'}} src="https://statics.pancake.vn/web-media/f4/26/6d/06/def0ccf4c96da793fe00085976c3dc5d3cbe366d7415d744d1266284.png" alt="" /></td>
-                    <th><Link to="/cdcvbc">10 cách diện chân váy bút chì thanh lịch</Link></th>
+                    <th><Link style={{textDecoration:'none'}} to="/MatchingSkirts">10 cách diện chân váy bút chì thanh lịch</Link></th>
                 </tr>
-                <tr style={{height:70,border: '1px solid black'}}>
+                <tr style={{height:70}}>
                     <td><img style={{width:40,height:40,borderRadius:'50%'}} src="https://statics.pancake.vn/web-media/f4/26/6d/06/def0ccf4c96da793fe00085976c3dc5d3cbe366d7415d744d1266284.png" alt="" /></td>
-                    <th><Link to="/sdttt">Sắc đỏ trong thời trang</Link></th>
+                    <th><Link style={{textDecoration:'none'}} to="/RedFashion">Sắc đỏ trong thời trang</Link></th>
                 </tr>
-                <tr style={{height:70,border: '1px solid black'}}>
+                <tr style={{height:70}}>
                     <td><img style={{width:40,height:40,borderRadius:'50%'}} src="https://statics.pancake.vn/web-media/f4/26/6d/06/def0ccf4c96da793fe00085976c3dc5d3cbe366d7415d744d1266284.png" alt="" /></td>
-                    <th><Link to="/cctpsm">Các công thức phối sơ mi + chân váy cả tuần cho nàng công sở</Link></th>
+                    <th><Link style={{textDecoration:'none'}} to="/MatchingShirt">Các công thức phối sơ mi + chân váy cả tuần cho nàng công sở</Link></th>
                 </tr>
-                <tr style={{height:70,border: '1px solid black'}}>
+                <tr style={{height:70}}>
                     <td><img style={{width:40,height:40,borderRadius:'50%'}} src="https://statics.pancake.vn/web-media/f4/26/6d/06/def0ccf4c96da793fe00085976c3dc5d3cbe366d7415d744d1266284.png" alt="" /></td>
-                    <th><Link to="/dlmj">Đi làm mặc gì?</Link></th>
+                    <th><Link style={{textDecoration:'none'}} to="/MatchingWork">Đi làm mặc gì?</Link></th>
                 </tr>
-                <tr style={{height:70,border: '1px solid black'}}>
+                <tr style={{height:70}}>
                     <td><img style={{width:40,height:40,borderRadius:'50%'}} src="https://statics.pancake.vn/web-media/f4/26/6d/06/def0ccf4c96da793fe00085976c3dc5d3cbe366d7415d744d1266284.png" alt="" /></td>
-                    <th><Link to="/vdcscc">Váy đầm công sở cao cấp: Cực sang trọng và tinh tế</Link></th>
+                    <th><Link style={{textDecoration:'none'}} to="/OfficeDress">Váy đầm công sở cao cấp: Cực sang trọng và tinh tế</Link></th>
                 </tr>
     
               </table>
         </div>
-        <div className="righthrct" style={{width:'55%',border:'1px solid gray',borderRadius:22,marginLeft:25}}>
-         <span style={{textAlign: 'center', color:'Red', fontSize: 'xx-large'}}>Tin tức & Sự kiện</span><br></br>
+        <div className="righthrct" style={{width:'55%',borderRadius:22,marginLeft:25}}>
+         <span style={{textAlign: 'center', color:'Red', fontSize: 'xx-large',fontStyle:'italic'}}>Tin tức & Sự kiện</span><br></br>
          <h1 style={{fontWeight: 600,
     fontSize: '26px',textAlign:'center', marginBottom:'-20px'}}>{props.span1}</h1><br></br><br></br>
     <span style={{float:'left'}}>{props.span2}</span>

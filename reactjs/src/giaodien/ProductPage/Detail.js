@@ -154,7 +154,7 @@ async function save(event) {
         setMessage(response.data.message);
         alert("sản phẩm đã có trong giỏ hàng");
       } else {
-        alert("Product added successfully");window.location.reload(); 
+        alert("Đã thêm sản phẩm vào giỏ hàng thành công");window.location.reload(); 
        
       }
 
@@ -377,7 +377,7 @@ if (!detail) {
       
       </div>
     </div>
-    <button style={{background:'#cc9c69',float:'left', border:'1px solid #cc9c69', borderRadius:15, height:40}} onClick={() => {
+    <button style={{background:'gray',float:'left', border:'1px solid #cc9c69', borderRadius:15, height:40}} onClick={() => {
         setIsVisible(!isVisible);
         toggleVisibility();
       }}>
@@ -391,7 +391,7 @@ if (!detail) {
 
 <div className="splq">
 
-      <div className="thegioiphaidep">
+      <div className="thegioiphaidep" style={{backgroundColor:'white'}}>
   <div className="tgpd1">
   <span className='tgpd'>THẾ GIỚI CỦA PHÁI ĐẸP</span>
   <p className='eqeqr'>Tổng hợp những kiến thức về thời trang, làm đẹp và những sự kiện thời trang khác</p>

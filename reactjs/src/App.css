@@ -344,17 +344,20 @@ overflow-x: scroll;
   top: 10px;
   right: 10px;
   padding-right: 10px;
-  width: 200px;
+  width: 25%;
+  padding-left: 35px;
 }
 #login-register ul {
-   float: left;
-   justify-content: center;
-   text-align: center;
-   display: flex;
+  float: left;
+  justify-content: center;
+  text-align: center;
+  display: flex;
 }
 
 #login-register ul li {
   font-weight: 600;
+  margin-top:5px;
+  margin-left: 15px;
 }
 
 .slidechung::-webkit-scrollbar {
@@ -404,6 +407,7 @@ align-items: center;
 width: 100%;
 height: 100%;
 background: white;
+color: white;
 }
 
 .slidechung h6{
@@ -1071,7 +1075,7 @@ height: 100%;
 }
 
 .button-38 {
-  background-color: #FFFFFF;
+  background-color: lightgrey;
   border: 0;
   border-radius: .5rem;
   box-sizing: border-box;
@@ -1084,7 +1088,6 @@ height: 100%;
   text-align: center;
   text-decoration: none #D1D5DB solid;
   text-decoration-thickness: auto;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   cursor: pointer;
   user-select: none;
   -webkit-user-select: none;
@@ -1093,7 +1096,7 @@ height: 100%;
 }
 
 .button-38:hover {
-  background-color: rgb(249,250,251);
+  background-color: rgb(92, 167, 242);
 }
 
 .button-38:focus {

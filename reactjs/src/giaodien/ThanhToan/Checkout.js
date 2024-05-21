@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import '../../App.css'
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-import { redirect, useLocation } from 'react-router-dom';
-import Navbar from "../HomePage/Navbar";
-import Footer from "../HomePage/Footer";
+import Navbar from '../HomePage/Navbar';
+import Footer from '../HomePage/Footer';
+import { useLocation } from 'react-router-dom';
+
 
 export default function Checkout() {
     const [check,setcheck] = useState([]);
@@ -30,7 +32,8 @@ const danhsachnganhang = [
   'chọn ngân hàng',
   'Vietcombank',
       'BIDV',
-      'NCB', 
+      'NCB',
+      
       'VietinBank',
       'Eximbank',
       'Sacombank',
@@ -66,13 +69,19 @@ const [tongcart, settongcart] = useState(initialTongcart);
     const userData = localStorage.getItem('userData');
     const user = userData ? JSON.parse(userData).user : null;
     const userId = user ? user.id : null;
-    const [slsptgh,setslsptgh] = useState(0);
+
+    const handleLogout = ()=>{
+        localStorage.removeItem('userData');
+      };     
+      const [slsptgh,setslsptgh] = useState(0);
     
    useEffect(()=>{
         axios.get(`${process.env.REACT_APP_BASEURL}/api/check/${userId}`)
         .then((response)=>{
           
             setcheck(response.data);
+            // const newInputValues = response.data.map((sanpham) => `${sanpham.title} - (size: ${sanpham.size})`);
+            // setInputValues(newInputValues);
            
         })
         .catch((error) => {
@@ -119,7 +128,7 @@ const [tongcart, settongcart] = useState(initialTongcart);
       
           alert('Chuyển đến trang thanh toán');
       
-          window.location.href = checkoutResponse;
+          window.location.href = checkoutResponse.data.data;
         } catch (err) {
           console.log(err);
           alert('Vui lòng điền đầy đủ thông tin!');
@@ -182,7 +191,7 @@ const [tongcart, settongcart] = useState(initialTongcart);
 
 
   return (
-    <div>
+    <div >
       <Navbar/>
 <div className="containercheckout">
 <h2>Thanh toán qua VNPAY</h2>
@@ -244,7 +253,7 @@ const [tongcart, settongcart] = useState(initialTongcart);
 
       </form>
 </div>
-              <Footer/>
+      <Footer/>
     </div>
   )
 }

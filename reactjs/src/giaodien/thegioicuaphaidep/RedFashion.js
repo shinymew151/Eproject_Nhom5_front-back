@@ -1,11 +1,11 @@
 import '../../App.css'
-import BlogNews from '../thegioicuaphaidep/BlogNews';
-export default function Hrctmddhmn() {
+import BlogNews from './BlogNews';
+export default function RedFashion() {
 
     return (
         <div>
             <BlogNews
-                span1 ="Hiểu rõ cơ thể đẹp hơn mỗi ngày"
+                span1 ="Sắc đỏ trong thời trang"
                 span2 = "Đăng bởi 'Ngọc Minh' vào lúc 18 Tháng 05 2024"
                 img1 ="https://statics.pancake.vn/web-media/f4/26/6d/06/def0ccf4c96da793fe00085976c3dc5d3cbe366d7415d744d1266284.png"
                 span3 = "Nàng chọn cho mình bộ váy đầm rất chỉn chu đến sở làm, nhưng dáng người lại “tố cáo” khuyết điểm của nàng. Thế mới nói, hiểu rõ được dáng người và cơ thể mình là bí quyết mặc đẹp đầu tiên và là yếu tố khá là quan trọng quyết định đến sự thành bại của một bộ trang phục. Và mỗi người một vóc dáng, nên việc mặc thế nào cho phù hợp với cơ thể, giúp che đi khuyết điểm, tôn lên ưu điểm là vấn đề chị em phụ nữ hết sức quan tâm."
