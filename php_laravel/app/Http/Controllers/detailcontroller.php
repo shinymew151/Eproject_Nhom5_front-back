@@ -114,6 +114,6 @@ class detailcontroller extends Controller
 
         $detail_product->delete();
 
-        return response()->json(['message' => 'xóa success']);
+        return response()->json(['message' => 'Xóa thành công ']);
     }
 }

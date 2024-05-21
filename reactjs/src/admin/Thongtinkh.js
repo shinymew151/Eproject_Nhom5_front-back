@@ -32,17 +32,17 @@ const handledelete = (id)=>{
         <Sidebar />
         <div className='custom-margin-top'>
         <div className='custom-margin-top'>
-        <h2>danh sách đơn hàng đã đặt</h2>
+        <h2>Danh sách đơn hàng đã đặt</h2>
 
 <table class="table">
   <thead>
     <tr>
-      <th scope="col">email</th>
-      <th scope="col">mật khẩu</th>
-      <th scope="col">họ tên</th>
-      <th scope="col">số điện thoại</th>
+      <th scope="col">Email</th>
+      <th scope="col">Mật khẩu</th>
+      <th scope="col">Họ tên</th>
+      <th scope="col">Số điện thoại</th>
     
-      <th scope="col">xóa</th>
+      <th scope="col">Xóa</th>
     </tr>
   </thead>
   <tbody>

@@ -25,7 +25,7 @@ export default function Kiemtradon() {
 
 <div className="donhangcuaban">
   <h4>ĐƠN HÀNG CỦA BẠN</h4>
-  <p>tình trang đơn hàng</p>
+  <p>Tình trạng đơn hàng</p>
 
   <table class="table">
   <thead>

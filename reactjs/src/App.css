@@ -990,7 +990,7 @@ height: 100%;
 
 
 
-.sotienchek{
+.sotiencheck{
   pointer-events: none;
 }
 
@@ -1106,3 +1106,16 @@ margin-top:-55;
 margin-left:60;
 font-size:200
 }
+.button1z {
+  background: linear-gradient(to right, #d6b48f, #e5c29c);
+  color: rgba(0, 0, 0, 0.403);
+  width: 210px;
+  height: 40px;
+  border-radius: 0;
+  font-size: 20px;
+  font-weight: 600; /* Adjust weight as needed */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out; /* Smooth hover effect */
+  cursor: pointer; /* Indicate interactivity */
+}
+

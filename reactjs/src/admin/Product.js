@@ -40,7 +40,7 @@ const xoasp = (id)=>{
   axios.delete(`${process.env.REACT_APP_BASEURL}/api/deleteproduct/${id}`)
   .then((response)=>{
     window.location.reload(); 
-    alert('xóa sản phẩm thành công');
+    alert('Xóa sản phẩm thành công');
   })
 }
 
@@ -59,7 +59,7 @@ const xoasp = (id)=>{
         'content-type': 'multipart/form-data'
       }
     });
-    alert("Product added successfully");
+    alert("Thêm sản phẩm thành công");
     sethinhanh("");
     settitle("");
     setgia("");
@@ -69,7 +69,7 @@ const xoasp = (id)=>{
     // Di chuyển file hình ảnh vào thư mục public/upload
   
   } catch (err) {
-    alert("Failed to add product");
+    alert("Thêm sản phẩm thất bại");
   }
 }
 

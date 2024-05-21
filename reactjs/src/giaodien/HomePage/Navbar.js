@@ -61,7 +61,7 @@ export default function Navbar(){
            </li>
 
           <li> 
-            <Link to="/Cart">Gỉo hàng <BsFillCartFill/></Link>
+            <Link to="/Cart">Giỏ hàng <BsFillCartFill/></Link>
             <div className="cart-count">{slsptgh}</div>
            </li>
 

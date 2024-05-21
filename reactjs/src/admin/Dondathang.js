@@ -59,7 +59,7 @@ export default function Dondathang() {
             <table className="table">
               <thead>
                 <tr>
-                  <th scope="col">id</th>
+                  <th scope="col">Id</th>
                   <th scope="col">Họ tên</th>
                   <th scope="col">Địa chỉ</th>
                   <th scope="col">Tỉnh</th>

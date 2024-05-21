@@ -18,7 +18,7 @@ export default function Detail_product() {
     await axios.delete(`${process.env.REACT_APP_BASEURL}/api/detail_product/${id}`)
     .then((response)=>{
       window.location.reload(); 
-      alert('xóa sản phẩm thành công');
+      alert('Xóa sản phẩm thành công');
     })
   }
 
@@ -50,7 +50,7 @@ export default function Detail_product() {
           'content-type': 'multipart/form-data'
         }
       });
-      alert("Product added successfully");
+      alert("Đã thêm sản phẩm thành công");
       setproduct_id("");
       setthemanhsp("");
       setchatlieusp("");
@@ -59,7 +59,7 @@ export default function Detail_product() {
       window.location.reload(); 
     
     } catch (err) {
-      setError('Product details already exist, please edit or delete below');
+      setError('Chi tiết sản phẩm đã tồn tại, vui lòng chỉnh sửa hoặc xóa bên dưới');
     }
   }
   
@@ -115,7 +115,7 @@ export default function Detail_product() {
       <th scope="col">Tình trạng</th>
       <th scope="col">Chất liệu sản phẩm</th>
       <th scope="col">Thế mạnh sản phẩm</th>
-      <th scope="col">Product ID</th>
+      <th scope="col">ID Sản Phẩm</th>
       <th scope="col">Xóa</th>
     </tr>
   </thead>

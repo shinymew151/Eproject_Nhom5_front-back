@@ -8,7 +8,7 @@ export default function Navbar() {
                     <button type="button" class="navbar-toggler mr-2 " data-toggle="offcanvas" title="Toggle responsive left sidebar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="navbar-brand" href="#" title="Free Bootstrap 4 Admin Template">Record Book</a>
+                    <a class="navbar-brand" href="#" title="Free Bootstrap 4 Admin Template"> Record Book </a>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
                     <span class="navbar-toggler-icon"></span>
@@ -16,7 +16,7 @@ export default function Navbar() {
                 <div class="navbar-collapse collapse" id="collapsingNavbar">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">Home</span></a>
+                            <a class="nav-link" href="#"> Home <span class="sr-only"> Home </span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="//www.codeply.com">Link</a>

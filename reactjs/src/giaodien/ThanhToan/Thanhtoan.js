@@ -67,9 +67,9 @@ const updateTongcart = (newValue) => {
 
  useEffect(() => {
   if (isCashOnDelivery) {
-    setpttt('thanh toán tiền mặt');
+    setpttt('Thanh toán tiền mặt');
   } else if (isBankTransfer) {
-    setpttt('chuyển khoản ngân hàng');
+    setpttt('Chuyển khoản ngân hàng');
   }
 }, [isCashOnDelivery, isBankTransfer]);
 
