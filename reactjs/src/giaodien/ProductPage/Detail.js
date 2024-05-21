@@ -8,14 +8,12 @@ import { useParams } from "react-router-dom";
 import { Link } from 'react-router-dom'
 import Navbar from "../HomePage/Navbar";
 import Footer from "../HomePage/Footer";
+
 export default function Detail() {
 const [detailtitle,setdetailtitle] = useState("");
 const [selectedSize, setSelectedSize] = useState('');
 const [detailgia,setdetailgia] = useState(0);
 const [slsp, setslsp] = useState(1);
-
-
-
 const [message, setMessage] = useState('');
 const [detailtong,setdetailtong] = useState(0);
 
@@ -70,6 +68,7 @@ const [detailtong,setdetailtong] = useState(0);
     element.classList.toggle("hidden");
   };
 
+  
   useEffect(() => {
     const interval = setInterval(() => {
       setPosition((position) => {
@@ -177,7 +176,7 @@ if (!detail) {
 
 
   return (
-    <div>
+    <div style={{backgroundColor:"#fef6f5"}}>
       <Navbar/>
 <div className="container">
 <p className='kasflak'><Link>Trang chủ</Link>/ <Link>Váy đầm công sở</Link>/ <Link>Đầm xoè hoa nhí xanh cam phối cổ nơ cách điệu</Link></p>
@@ -223,7 +222,7 @@ if (!detail) {
 
            <div className="nd1">
             <div className="nd1fake">
-            <img src="https://cdn.pancake.vn/1/s1600x1600/fwebp/5d/1c/1b/14/01327040d3119133a83b750ff7f3b0d706723343c0a029cae189fd7f.jpg" alt="" />
+            <img src="http://127.0.0.1:8000/upload/75306ee4e849922d7afdcff62eb3857c44f82d2121088ea3600ce944.webp" alt="" />
             <div className="thep">
             <p><Link>Đầm hoa xanh sát nách phối cổ vuông</Link></p>
             <p className='price'>299.000₫ </p>
@@ -324,10 +323,13 @@ if (!detail) {
     
    
 
-    </div><br></br>
+    </div>
+    <br></br>
+
     <div className="motasp">
       <div className="tieude">
-      <p style={{fontSize: 16,textTransform: 'uppercase',fontWeight:500,float:'left'}}>MÔ TẢ / <span> ĐÁNH GIÁ</span></p><br></br><br></br>
+      <p style={{fontSize: 16,textTransform: 'uppercase',fontWeight:500,float:'left',padding:'10px'}}>MÔ TẢ / <span> ĐÁNH GIÁ</span></p>
+      <br></br><br></br>
       <div className="chitietsp">
         <div className="chitietsp1">
       <h2>Chất liệu</h2><br/><br/>
@@ -402,7 +404,7 @@ if (!detail) {
      <p style={{background:'brown'}}>23 Tháng 8 2022</p>
      <h5><Link to="/hrctddhmn"> HIỂU RÕ CƠ THỂ MÌNH ĐỂ ĐẸP HƠN MỖI NGÀY </Link> </h5>
      <BsFillPersonFill/> Thời trang hot
-     <p className='yasuo'>Đừng mãi chỉ chạy theo xu hướng, hiểu rõ cơ thể mình mới là điều quan trọng nhất để mặc đẹp mỗi ngày. Hy vọng những chia sẻ của Citi Mode sẽ phần nàng tự tin hơn trong khoảng lựa chọn trang phục để luôn tỏa sáng nhất nàng nhé.</p>
+     <p className='slidea'>Đừng mãi chỉ chạy theo xu hướng, hiểu rõ cơ thể mình mới là điều quan trọng nhất để mặc đẹp mỗi ngày. Hy vọng những chia sẻ của Citi Mode sẽ phần nàng tự tin hơn trong khoảng lựa chọn trang phục để luôn tỏa sáng nhất nàng nhé.</p>
      <h6><Link to="/hrctddhmn">  Đọc tiếp <AiOutlineArrowRight/></Link></h6> 
     </div>
   </div>
@@ -412,7 +414,7 @@ if (!detail) {
      <p style={{background:'brown'}}>23 Tháng 8 2022</p>
      <h5><Link to="/nbvanvddx">  NỔI BẬT VÀ ẤN TƯỢNG VỚI ĐẦM DÁNG XÒE !!!</Link> </h5>
      <BsFillPersonFill/> Thời trang hot
-     <p className='yasuo'>Nếu những thiết kế đầm suông mang đến sự thoải mái, trẻ trung hay những kiểu dáng bodycon ấn tượng cho vẻ ngoài cuốn hút thì những thiết kế đầm xòe lại không làm cho các Quý cô thất vọng với sự nhẹ nhàng và vô cùng nữ tính.</p>
+     <p className='slidea'>Nếu những thiết kế đầm suông mang đến sự thoải mái, trẻ trung hay những kiểu dáng bodycon ấn tượng cho vẻ ngoài cuốn hút thì những thiết kế đầm xòe lại không làm cho các Quý cô thất vọng với sự nhẹ nhàng và vô cùng nữ tính.</p>
 
  <h6><Link to="/nbvanvddx">  Đọc tiếp <AiOutlineArrowRight/></Link></h6> 
     </div>
@@ -424,7 +426,7 @@ if (!detail) {
      <p style={{background:'brown'}}>23 Tháng 8 2022</p>
      <h5><Link to="/cdcvbc">  10 cách diện chân váy bút chì thanh lịch</Link> </h5>
      <BsFillPersonFill/> Thời trang hot
-     <p className='yasuo'>Chân váy bút chì là 1 trong những item kinh điển của phụ nữ công sở. Item này vừa đơn giản, tôn dáng lại mang cảm giác thanh lịch, chỉn chu cho người mặc. Phụ nữ Hàn cũng thường xuyên chọn diện chân váy bút chì khi đến sở làm. Thậm chí, họ còn biến tấu, mix&match chân váy bút chì với nhiều item khác biệt để có được những bộ cánh mới mẻ mỗi ngày.</p>
+     <p className='slidea'>Chân váy bút chì là 1 trong những item kinh điển của phụ nữ công sở. Item này vừa đơn giản, tôn dáng lại mang cảm giác thanh lịch, chỉn chu cho người mặc. Phụ nữ Hàn cũng thường xuyên chọn diện chân váy bút chì khi đến sở làm. Thậm chí, họ còn biến tấu, mix&match chân váy bút chì với nhiều item khác biệt để có được những bộ cánh mới mẻ mỗi ngày.</p>
 
  <h6><Link to="/cdcvbc">  Đọc tiếp <AiOutlineArrowRight/></Link></h6> 
     </div>
@@ -436,7 +438,7 @@ if (!detail) {
      <p style={{background:'brown'}}>23 Tháng 8 2022</p>
      <h5><Link to="/sdttt">  SẮC ĐỎ TRONG THỜI TRANG</Link> </h5>
      <BsFillPersonFill/> Thời trang hot
-     <p className='yasuo'>Kể từ thời cổ đại, màu đỏ đại diện cho cuộc sống sung túc, cho nguồn sức mạnh dồi dào và niềm đam mê cháy bỏng. Trong thời trang, không ít những món đồ màu đỏ đã trở thành biểu tượng thương hiệu riêng cũng như đại diện thương hiệu chung. Trang phục màu đỏ có sức mê hoặc khó cưỡng, tạo hiệu ứng thị giác mạnh mẽ, là cách các nàng thể hiện bản lĩnh tự tin và khả năng làm chủ tình huống.</p>
+     <p className='slidea'>Kể từ thời cổ đại, màu đỏ đại diện cho cuộc sống sung túc, cho nguồn sức mạnh dồi dào và niềm đam mê cháy bỏng. Trong thời trang, không ít những món đồ màu đỏ đã trở thành biểu tượng thương hiệu riêng cũng như đại diện thương hiệu chung. Trang phục màu đỏ có sức mê hoặc khó cưỡng, tạo hiệu ứng thị giác mạnh mẽ, là cách các nàng thể hiện bản lĩnh tự tin và khả năng làm chủ tình huống.</p>
  <h6><Link to="/sdttt">  Đọc tiếp <AiOutlineArrowRight/></Link></h6> 
     </div>
   </div>
@@ -446,7 +448,7 @@ if (!detail) {
      <p style={{background:'brown'}}>23 Tháng 8 2022</p>
      <h5><Link to="/cctpsm"> Các công thức phối sơ mi + chân váy cả tuần cho nàng công sở</Link> </h5>
      <BsFillPersonFill/> Thời trang hot
-     <p className='yasuo'>Trong trường hợp quá lười chọn đồ hoặc bí ý tưởng, nàng cứ diện một set đồ an toàn mà chuẩn nhất cho chốn công sở, chính là nguyên set đồ vest. Áo vest đi cùng chân váy luôn là outfit đạt điểm 10 về độ lịch sự, mang đậm hơi thở quý cô công sở và gần như không có điểm trừ. Outfit này chỉ có đôi chút bất tiện nếu diện trong thời tiết nóng bức. Bởi vì thế nàng hãy ưu tiên chọn set đồ này cho những ngày khí hậu mát mẻ, đặc biệt trong những ngày có sự kiện quan trọng như họp hành, gặp mặt khách hàng để đảm bảo nét thanh lịch, kín đáo cho chính mình nàng nha!</p>
+     <p className='slidea'>Trong trường hợp quá lười chọn đồ hoặc bí ý tưởng, nàng cứ diện một set đồ an toàn mà chuẩn nhất cho chốn công sở, chính là nguyên set đồ vest. Áo vest đi cùng chân váy luôn là outfit đạt điểm 10 về độ lịch sự, mang đậm hơi thở quý cô công sở và gần như không có điểm trừ. Outfit này chỉ có đôi chút bất tiện nếu diện trong thời tiết nóng bức. Bởi vì thế nàng hãy ưu tiên chọn set đồ này cho những ngày khí hậu mát mẻ, đặc biệt trong những ngày có sự kiện quan trọng như họp hành, gặp mặt khách hàng để đảm bảo nét thanh lịch, kín đáo cho chính mình nàng nha!</p>
  <h6><Link to="/cctpsm">  Đọc tiếp <AiOutlineArrowRight/></Link></h6> 
     </div>
   </div>
@@ -454,9 +456,11 @@ if (!detail) {
     <div className="slidefake" style={{ transform: `translateX(${-position}px)` }}>
      <img src="https://statics.pancake.vn/web-media/15/63/2d/28/3a1a46e4647e452146fa35e04913214f6f53efc6e382b9958d9f96db.png" alt="" /><br></br>
      <p style={{background:'brown'}}>23 Tháng 8 2022</p>
-     <h5><Link to="/dlmj"> ĐI LÀM MẶC GÌ?</Link> </h5>
+     <h5 style={{textAlign:'center'}}><Link to="/dlmj"> ĐI LÀM MẶC GÌ?</Link> </h5>
+     <br></br>
+     <br></br>
      <BsFillPersonFill/> Thời trang hot
-     <p className='yasuo'>Thời trang không chỉ là lĩnh vực liên quan đến phạm trù thẩm mỹ mà ở trong đó còn ẩn chứa những bí mật hết sức thú vị. Có thể nàng chưa biết, mỗi màu sắc trong thời trang đều nói lên một tính cách ẩn sâu trong con người nàng. Và dưới đây là ý nghĩa màu sắc thời trang và cách phối màu quần áo phù hợp cho mỗi ngày đi làm nàng nha!</p>
+     <p className='slidea'>Thời trang không chỉ là lĩnh vực liên quan đến phạm trù thẩm mỹ mà ở trong đó còn ẩn chứa những bí mật hết sức thú vị. Có thể nàng chưa biết, mỗi màu sắc trong thời trang đều nói lên một tính cách ẩn sâu trong con người nàng. Và dưới đây là ý nghĩa màu sắc thời trang và cách phối màu quần áo phù hợp cho mỗi ngày đi làm nàng nha!</p>
       <h6><Link to="/dlmj">  Đọc tiếp <AiOutlineArrowRight/></Link></h6> 
     
     </div>

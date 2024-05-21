@@ -18,13 +18,13 @@ class cartcontroller extends Controller
     public function index($userid)
     { 
         $product = product::all();
-
+       
         $cart = cart::with('product', 'dkdn')
             ->where('dkdn_id', $userid) // Update variable name here
             ->orderBy('id', 'DESC')
             ->get();
         
-         return response()->json($cart);
+        return response()->json($cart);
     }
     /**
      * Show the form for creating a new resource.

@@ -28,7 +28,6 @@ import Dlmj from './giaodien/thegioicuaphaidep/Dlmj';
 import Nbvanvddx from './giaodien/thegioicuaphaidep/Nbvanvddx';
 import Sdttt from './giaodien/thegioicuaphaidep/Sdttt';
 import Vdcscc from './giaodien/thegioicuaphaidep/Vdcscc';
-import Kiemtradon from '../src/giaodien/ThanhToan/Kiemtradon';
 import Checkout from './giaodien/ThanhToan/Checkout';
 
 function App() {
@@ -45,7 +44,6 @@ function App() {
           <Route path="/admin/Product" element={<Product />} />
           <Route path="/Cart" element={<Cart />} />
           <Route path="/Thanhtoan" element={<Thanhtoan />} />
-          <Route path="/kiemtradon" element={<Kiemtradon />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/category/sominu" element={<Sominu />} />
           <Route path="/category/chanvay" element={<Chanvay />} />

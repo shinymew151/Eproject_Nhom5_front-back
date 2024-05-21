@@ -1,11 +1,7 @@
 import React, { useState, useEffect } from "react";
 import '../../App.css'
-import {AiFillCaretDown} from 'react-icons/ai'
-import {BsFillCartFill} from 'react-icons/bs'
-
-import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-import { useLocation } from 'react-router-dom';
+import { redirect, useLocation } from 'react-router-dom';
 import Navbar from "../HomePage/Navbar";
 import Footer from "../HomePage/Footer";
 
@@ -34,8 +30,7 @@ const danhsachnganhang = [
   'chọn ngân hàng',
   'Vietcombank',
       'BIDV',
-      'NCB',
-      
+      'NCB', 
       'VietinBank',
       'Eximbank',
       'Sacombank',
@@ -71,19 +66,13 @@ const [tongcart, settongcart] = useState(initialTongcart);
     const userData = localStorage.getItem('userData');
     const user = userData ? JSON.parse(userData).user : null;
     const userId = user ? user.id : null;
-
-    const handleLogout = ()=>{
-        localStorage.removeItem('userData');
-      };     
-      const [slsptgh,setslsptgh] = useState(0);
+    const [slsptgh,setslsptgh] = useState(0);
     
    useEffect(()=>{
         axios.get(`${process.env.REACT_APP_BASEURL}/api/check/${userId}`)
         .then((response)=>{
           
             setcheck(response.data);
-            // const newInputValues = response.data.map((sanpham) => `${sanpham.title} - (size: ${sanpham.size})`);
-            // setInputValues(newInputValues);
            
         })
         .catch((error) => {
@@ -130,7 +119,7 @@ const [tongcart, settongcart] = useState(initialTongcart);
       
           alert('Chuyển đến trang thanh toán');
       
-          window.location.href = checkoutResponse.data.data;
+          window.location.href = checkoutResponse;
         } catch (err) {
           console.log(err);
           alert('Vui lòng điền đầy đủ thông tin!');

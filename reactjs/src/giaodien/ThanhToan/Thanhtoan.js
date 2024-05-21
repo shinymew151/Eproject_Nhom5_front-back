@@ -46,7 +46,7 @@ const [phuongxa, setPhuongxa] = useState('');
   const [thongtinbosung,setthongtinbosung] = useState('');
   
 
-  const [isCashOnDelivery, setIsCashOnDelivery] = useState(false);
+  const [isCashOnDelivery, setIsCashOnDelivery] = useState(true);
   const [isBankTransfer, setIsBankTransfer] = useState(false);
 
 
@@ -261,7 +261,7 @@ const handlePayment = async(e) => {
 
   <div className="form-group">
     <label style={{float:'left'}} htmlFor="">Họ và tên</label>
-    <input type="text" name="hovaten" className="form-control" id="title" placeholder="Nhập Tên Sản Phẩm" required
+    <input type="text" name="hovaten" className="form-control" id="title" placeholder="Nhập Tên người nhận" required
       value={hovaten} onChange={(e) => sethovaten(e.target.value)}/>
   </div>
 
@@ -366,15 +366,15 @@ const handlePayment = async(e) => {
 <div className="thongtinbosung">
   <span style={{float:'left',color:'blue'}}>THÔNG TIN BỔ SUNG</span><br></br>
   <span style={{float:'left'}}>Ghi chú đơn hàng (thời gian nhận hàng,nơi nhận)</span><br></br>
-  <textarea  value={thongtinbosung} onChange={(e) => setthongtinbosung(e.target.value)} style={{float:'left'}} name="" id="" cols="78" rows="7"></textarea>
+  <textarea  value={thongtinbosung} onChange={(e) => setthongtinbosung(e.target.value)} style={{float:'left'}} name="" id="" cols="78" rows="6"></textarea>
 </div>
 </form>
 
 
   </div>
-  <div className="thanhtoanright" style={{ width: 500, marginLeft: 20, border: '2px solid black' }}>
+  <div className="thanhtoanright" style={{ width: 500, marginLeft: 20, border: '2px solid black', marginBottom:'10px' }}>
   <div className="don-hang">
-    <h4 style={{marginLeft:'-100px'}}>Đơn hàng của bạn</h4>
+    <h4 style={{marginLeft:'-25px'}}>Đơn hàng của bạn</h4>
     <div className="abcxyzthanhtoan">
       <div className="abcdthanhtoan">
         <p className="sanpham-title">SẢN PHẨM</p>
@@ -417,7 +417,7 @@ const handlePayment = async(e) => {
           <label htmlFor="cash-on-delivery">Trả tiền mặt khi nhận hàng</label>
         </div>
         <div>
-          <input type="checkbox" id="bank-transfer"   checked={isBankTransfer}
+          <input type="checkbox" id="bank-transfer" checked={isBankTransfer} 
           onClick={handleBankTransferChange}/>
           <label htmlFor="bank-transfer">Chuyển khoản ngân hàng</label>
         </div>
