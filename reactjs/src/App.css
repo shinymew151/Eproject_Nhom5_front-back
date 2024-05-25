@@ -150,6 +150,11 @@ ul #dc1 a:hover {
   color: #ff7f50;
 }
 
+#admin a:hover {
+  display: block;
+  color: #ff7f50;
+  
+}
 
 
 .nd {
@@ -710,21 +715,24 @@ height: 100%;
   color: white; /* Màu chữ cho button được chọn */
 }
 
-
+/* .list-group-item{
+  border: none;
+} */
 
 .list-group-item:hover {
-  cursor: pointer; /* Hiển thị icon khi hover vào */
-  background-color: #f8f9fa !important; /* Thay đổi màu nền */
-  color: red !important; /* Thay đổi màu chữ */
+  cursor: pointer;
+  background-color: #f8f9fa !important;
+  color: red !important;
 }
 
 .list-group-item a:hover {
-  text-decoration: underline; /* Thêm gạch chân khi hover vào Link */
-  opacity: 0.7; /* Thêm hiệu ứng khi hover vào Link */
+  text-decoration: underline;
+  opacity: 0.7;
 }
 .list-group-item a {
-  text-decoration: none; /* Loại bỏ gạch chân cho Link */
-  color: #343a40; /* Màu chữ cho Link */
+  text-decoration: none;
+  color: #343a40;
+
 }
 
 .CountdownTimer {

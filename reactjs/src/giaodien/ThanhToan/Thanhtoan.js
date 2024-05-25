@@ -372,7 +372,7 @@ const handlePayment = async(e) => {
 
 
   </div>
-  <div className="thanhtoanright" style={{ width: 520, marginLeft: 20, border: 'none', marginBottom:'10px',position:'relative' }}>
+  <div className="thanhtoanright" style={{ width: 520, marginLeft: 20, border:'none', marginBottom:'10px',position:'relative' }}>
   <div className="don-hang">
     <h4 style={{marginLeft:'-25px'}}>Đơn hàng của bạn</h4>
     <div className="abcxyzthanhtoan">

@@ -60,15 +60,8 @@ function App() {
           <Route path="/OfficeDress" element={<OfficeDress />} />
           <Route path="/MatchingDress" element={<MatchingDress />} />
           <Route path="/thongtinkhachhang" element={<Thongtinkh />} />
-        
-
-
           <Route path="/account/login" element={<Dn />} />
-          <Route path="/account/register" element={<Dk />} />
-
-
-
-     
+          <Route path="/account/register" element={<Dk />} />    
           <Route path="/admin/dangnhap" element={<Dangnhapadmin />} />
           <Route path="/Detail/:title/:id" element={<Detail />} />
        
