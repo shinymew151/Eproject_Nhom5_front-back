@@ -55,14 +55,14 @@ export default function Navbar(){
               <li><Link to="/category/xahang">Xả hàng</Link></li>
             </ul>
           </li>
-                   <li> 
+
+            <li> 
             <Link to="/Cart">Giỏ hàng <BsFillCartFill/></Link>
             <div className="cart-count">{slsptgh}</div>
            </li>
 
         </ul>
       </div>
-      
       <div id="login-register">
             <ul>
               {user ? (
@@ -70,7 +70,7 @@ export default function Navbar(){
                   <li>Xin chào: {user.name}</li>
                   <li>
                     <button onClick={handleLogout} class="button-38">
-                      <Link to="/account/login">Đăng xuất</Link>
+                      <Link to="/account/login" style={{textDecoration:'none'}}>Đăng xuất</Link>
                     </button>
                   </li>
                 </>

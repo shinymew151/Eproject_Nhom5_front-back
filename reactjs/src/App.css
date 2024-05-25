@@ -150,6 +150,11 @@ ul #dc1 a:hover {
   color: #ff7f50;
 }
 
+#admin a:hover {
+  display: block;
+  color: #ff7f50;
+  
+}
 
 
 .nd {
@@ -710,21 +715,24 @@ height: 100%;
   color: white; /* Màu chữ cho button được chọn */
 }
 
-
+/* .list-group-item{
+  border: none;
+} */
 
 .list-group-item:hover {
-  cursor: pointer; /* Hiển thị icon khi hover vào */
-  background-color: #f8f9fa !important; /* Thay đổi màu nền */
-  color: red !important; /* Thay đổi màu chữ */
+  cursor: pointer;
+  background-color: #f8f9fa !important;
+  color: red !important;
 }
 
 .list-group-item a:hover {
-  text-decoration: underline; /* Thêm gạch chân khi hover vào Link */
-  opacity: 0.7; /* Thêm hiệu ứng khi hover vào Link */
+  text-decoration: underline;
+  opacity: 0.7;
 }
 .list-group-item a {
-  text-decoration: none; /* Loại bỏ gạch chân cho Link */
-  color: #343a40; /* Màu chữ cho Link */
+  text-decoration: none;
+  color: #343a40;
+
 }
 
 .CountdownTimer {
@@ -1007,7 +1015,7 @@ height: 100%;
 
 
 
-.sotiencheck{
+.sotienchek{
   pointer-events: none;
 }
 
@@ -1122,16 +1130,3 @@ margin-top:-55;
 margin-left:60;
 font-size:200
 }
-.button1z {
-  background: linear-gradient(to right, #d6b48f, #e5c29c);
-  color: rgba(0, 0, 0, 0.403);
-  width: 210px;
-  height: 40px;
-  border-radius: 0;
-  font-size: 20px;
-  font-weight: 600; /* Adjust weight as needed */
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-  transition: all 0.2s ease-in-out; /* Smooth hover effect */
-  cursor: pointer; /* Indicate interactivity */
-}
-
