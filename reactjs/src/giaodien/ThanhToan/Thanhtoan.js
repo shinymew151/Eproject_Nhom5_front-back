@@ -372,16 +372,16 @@ const handlePayment = async(e) => {
 
 
   </div>
-  <div className="thanhtoanright" style={{ width: 520, marginLeft: 20, border:'none', marginBottom:'10px',position:'relative' }}>
+  <div className="thanhtoanright">
   <div className="don-hang">
-    <h4 style={{marginLeft:'-25px'}}>Đơn hàng của bạn</h4>
+    <h4>Đơn hàng của bạn</h4>
     <div className="abcxyzthanhtoan">
       <div className="abcdthanhtoan">
         <p className="sanpham-title">SẢN PHẨM</p>
         <p className="tong-title">TỔNG</p>
       </div>
       <hr />
-      <div className="chitietabcdthanhtoan" style={{ display: 'flex', height: '100%', flexDirection: 'column' }}>
+      <div className="chitietabcdthanhtoan">
   {sanpham.map((sp) => (
     <div key={sp.id} style={{ display: 'flex', justifyContent: 'space-between' }}>
       <div style={{ width: 400 }} className="sanpham-info">

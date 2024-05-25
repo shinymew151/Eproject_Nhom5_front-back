@@ -9,7 +9,7 @@ import { BsFillPersonFill } from 'react-icons/bs'
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import Homeimg from '../HomePage/Homeimg.png'
+import video from './Homevideo.mp4'
 
 import axios from 'axios';
 export default function Home() {
@@ -66,9 +66,10 @@ export default function Home() {
   return (
     <div>
       <Navbar />
+      <div className="video-mask">
+      <video src = {video}  height="500" autoPlay muted loop="true" type="video/mp4" className="video-mask"></video>
+      </div>
       <div>
-        <img id="anhheader" className="img-fluid" src ={Homeimg} alt="Responsive image" style={{width:'1000px', height:'550px'}} />
-
         <div className="nd">
           <div className="nd1">
             <div className="icon">

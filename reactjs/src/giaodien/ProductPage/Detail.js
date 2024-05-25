@@ -176,7 +176,7 @@ if (!detail) {
 
 
   return (
-    <div style={{backgroundColor:"#fef6f5"}}>
+    <div>
       <Navbar/>
 <div className="container">
 <p className='kasflak'><Link>Trang chủ</Link>/ <Link>Váy đầm công sở</Link>/ <Link>Đầm xoè hoa nhí xanh cam phối cổ nơ cách điệu</Link></p>
@@ -332,7 +332,8 @@ if (!detail) {
       <br></br><br></br>
       <div className="chitietsp">
         <div className="chitietsp1">
-      <h2>Chất liệu</h2><br/><br/>
+      <h2>Chất liệu</h2>
+      <br/><br/>
       <p><TiMinus/>{detail.chatlieu}</p>
    
 </div>
