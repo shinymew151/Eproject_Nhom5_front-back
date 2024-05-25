@@ -120,7 +120,7 @@ const xoasp = (id)=>{
           <th scope="col">ID</th>
           <th scope="col">Hình ảnh</th>
           <th scope="col">Tên sản phẩm</th>
-          <th scope="col">Giá thành</th>
+          <th scope="col">Giá</th>
           <th scope="col">Danh mục</th>
           <th scope="col">Xóa</th>
         </tr>

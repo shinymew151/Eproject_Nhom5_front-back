@@ -38,7 +38,7 @@ const [phuongxa, setPhuongxa] = useState('');
 
   const [hovaten,sethovaten] = useState("");
   const [diachi,setdiachi] = useState("");
-  const tinhtrangdon= "Chờ duyệt";
+  const tinhtrangdon= "Thanh toán";
   
 
   const [sdt,setsdt] = useState();

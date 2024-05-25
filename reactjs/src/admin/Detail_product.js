@@ -75,14 +75,14 @@ export default function Detail_product() {
       
   
   
-  <h2>thêm chi tiết sản phẩm</h2>
+  <h2>Thêm chi tiết sản phẩm</h2>
   <form onSubmit={save}>
   {/* Hiển thị thông báo lỗi nếu có */}
   {error && <div>{error}</div>}
   <div class="form-group">
-    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">product_id</label>
+    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Sản phẩm</label>
     <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" name="product_id" required value={product_id} onChange={(e) => setproduct_id(e.target.value)}>
-      <option value="" disabled hidden>Choose...</option>
+      <option value="" disabled hidden>Chọn...</option>
       {danhmucsp.map((dm) => (
         <option key={dm.id} value={dm.id}>{dm.id}.{dm.title} ({dm.category.namecategory})</option>
       ))}

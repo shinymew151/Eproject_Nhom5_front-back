@@ -152,18 +152,18 @@ async function save(event) {
 
       if (response.data.message) {
         setMessage(response.data.message);
-        alert("Sản phẩm đã có trong giỏ hàng");
+        alert("sản phẩm đã có trong giỏ hàng");
       } else {
-        alert("Product added successfully");window.location.reload(); 
+        alert("Đã thêm sản phẩm vào giỏ hàng thành công");window.location.reload(); 
        
       }
 
     } catch (err) {
     if(!userId){
-      alert('Bạn phải đăng nhập để thêm sản phẩm vào giỏ hàng');
+      alert('bạn phải đăng nhập để thêm sản phẩm vào giỏ hàng');
     }
 else{
-      alert("Vui lòng chọn kích cỡ sản phẩm");
+      alert("Vui lòng chọn size sản phẩm");
     }
   }
   }
@@ -254,7 +254,7 @@ if (!detail) {
   <span className='tinhtrang'>Tình trạng: {detail.tinhtrang}</span>
   
   <div className='price-container'>
-    <span name="" style={{fontSize:21,color:'red',marginTop:0,fontWeight:500}} className='price'>Giá: {detail.product.gia} đ</span><br></br>
+    <span name="" style={{fontSize:21,color:'red',marginTop:0,fontWeight:500}} className='price'>giá: {detail.product.gia} đ</span><br></br>
       
     <div className="size-container">
     <b style={{fontSize:20}} className='buttonsize'>Size:</b>
@@ -303,12 +303,12 @@ if (!detail) {
         <input style={{width:50,height:40,fontSize:20,alignItems:'center',textAlign:'center',border: '1px solid gray'}}  type="text" value={slsp} />
         <button onClick={up} style={{fontSize:20,width:20,height:40,textAlign:'center',alignItems:'center',justifyContent:'center',background:'#f9f9f9',border: '1px solid gray'}}>+</button>
       </b>
-      <button className="button1z">Thêm vào giỏ hàng</button>
+      <button style={{border: '1px solid #dd9c3f',fontWeight: 500,color:'white',width:210,height:40,borderRadius:35,fontSize:20,background:'#dd9c3f'}}>Thêm vào giỏ hàng</button>
     
       
     </div>
 <div style={{float:'left'}}>
-    <p style={{fontSize:19,float:'left'}}>Thông tin sản phẩm: </p>
+    <p style={{fontSize:19,float:'left'}}>thông tin sản phẩm: </p>
     <p style={{fontSize:19,float:'left'}}><TiMinus/>Miễn phí vận chuyển với đơn hàng có giá trị trên 599K<br></br>
 <TiMinus/>Giao hàng toàn quốc từ 2-4 ngày làm việc<br></br>
 <TiMinus/>Đổi trả sản phẩm trong 7 ngày, từ ngày nhận được sản phẩm<br></br>
@@ -381,7 +381,7 @@ if (!detail) {
         setIsVisible(!isVisible);
         toggleVisibility();
       }}>
-        {isVisible ? "Ẩn" : "Hiện"} Chi tiết sản phẩm
+        {isVisible ? "Ẩn" : "Hiện"} chi tiết sản phẩm
       </button>
       </div>
     </div>

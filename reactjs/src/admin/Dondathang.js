@@ -60,12 +60,13 @@ export default function Dondathang() {
               <thead>
                 <tr>
                   <th scope="col">Id</th>
+                  <th scope="col">Sản phẩm</th>
                   <th scope="col">Họ tên</th>
                   <th scope="col">Địa chỉ</th>
                   <th scope="col">Tỉnh</th>
                   <th scope="col">Quận huyện</th>
                   <th scope="col">Phường xã</th>
-                  <th scope="col">Số điện thoại kh</th>
+                  <th scope="col">Số điện thoại</th>
                   <th scope="col">Thông tin bổ sung</th>
                   <th scope="col">Thời gian đặt hàng</th>
                   <th scope="col">Phương thức thanh toán</th>
@@ -77,6 +78,7 @@ export default function Dondathang() {
                 {dh.map((donhang) => (
                   <tr key={donhang.id}>
                     <td>{donhang.id}</td>
+                    <td>{donhang.sanpham}</td>
                     <td>{donhang.hovaten}</td>
                     <td>{donhang.diachi}</td>
                     <td>{donhang.tinh}</td>
@@ -88,7 +90,6 @@ export default function Dondathang() {
                     <td>{donhang.pttt}</td>
                     <td>
                       <select value={donhang.tinhtrangdon} onChange={(e) => handleSelectChange(e, donhang.id)}>
-                        <option value="cho-duyet">Chờ duyệt</option>
                         <option value="dang-giao-hang">Đang giao hàng</option>
                         <option value="da-giao">Đã giao</option>
                       </select>
