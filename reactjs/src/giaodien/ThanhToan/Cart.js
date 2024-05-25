@@ -3,8 +3,8 @@ import '../../App.css'
 import {FaTrashAlt} from 'react-icons/fa'
 import { Link } from "react-router-dom";
 import axios from "axios";
-import Navbar from "../HomePage/Navbar";
-
+import Navbar from '../HomePage/Navbar';
+import Footer from '../HomePage/Footer';
 
 export default function Cart() {
   const [slsptgh,setslsptgh] = useState(0);
@@ -56,8 +56,8 @@ export default function Cart() {
   };
 
   return (
-    <div>
-   <Navbar />
+       <div>
+        <Navbar/>
 <div className="container">
     <div className="leftcc" style={{width:'55%',float:'left'}}>
 <table className="table">
@@ -123,12 +123,10 @@ export default function Cart() {
   </tbody>
 </table>
 <Link to="/Thanhtoan">
-<button style={{width:'100%',background: '#fd7e14',   lineHeight: 2,
-    textAlign: 'center',boxSizing: 'border-box', fontFamily: 'Roboto, sans-serif',color:'white',fontWeight:550}}>  TIẾN HÀNH THANH TOÁN </button> </Link>
+<button style={{width:'70%',background: 'gray',   lineHeight: 2,
+    textAlign: 'center', fontFamily: 'Roboto, sans-serif',color:'white',fontWeight:550, borderRadius:'10px'}}>  TIẾN HÀNH THANH TOÁN </button> </Link>
 </div>
       </div>
-
     </div>
-    
   )
 }

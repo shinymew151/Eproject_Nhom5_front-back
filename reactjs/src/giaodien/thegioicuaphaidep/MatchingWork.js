@@ -1,7 +1,7 @@
 import '../../App.css'
-import BlogNews from '../thegioicuaphaidep/BlogNews';
+import BlogNews from './BlogNews';
 
-export default function Dlmj() {
+export default function MatchingWork() {
 
     return (
         <div>

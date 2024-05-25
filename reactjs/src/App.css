@@ -290,6 +290,7 @@ display: flex;
 
 .left {
   font-size: 45px;
+  background-color: white;
 }
 
 .right {
@@ -308,15 +309,18 @@ display: flex;
   cursor: pointer;
  font-size: 25px;
  font-weight: 600;
+ background-color: white;
 }
 
 .tgpd1 {
   text-align: center;
   padding-top: 20px;
+  background-color: white;
 }
 
 .eqeqr{
   color: rgb(64, 62, 62);
+  background-color: white;
 }
 
 .slide{
@@ -332,8 +336,7 @@ overflow-x: scroll;
   display: flex;
   width: 100%;
   margin: 0 auto;
-
-
+  background-color: white;
 }
 #login-register {
   position: absolute;
@@ -341,17 +344,20 @@ overflow-x: scroll;
   top: 10px;
   right: 10px;
   padding-right: 10px;
-  width: 200px;
+  width: 25%;
+  padding-left: 35px;
 }
 #login-register ul {
-   float: left;
-   justify-content: center;
-   text-align: center;
-   display: flex;
+  float: left;
+  justify-content: center;
+  text-align: center;
+  display: flex;
 }
 
 #login-register ul li {
   font-weight: 600;
+  margin-top:5px;
+  margin-left: 15px;
 }
 
 .slidechung::-webkit-scrollbar {
@@ -373,7 +379,7 @@ overflow-x: scroll;
 .slidefake{
   width: 235px;
   height: 365px;
-
+  background-color: aliceblue;
   margin: 0 auto;
 
   margin-top: 10px;
@@ -400,14 +406,15 @@ text-align: center;
 align-items: center;
 width: 100%;
 height: 100%;
-
+background: white;
+color: white;
 }
+
 .slidechung h6{
   float:left;
 }
 
 .slidea{
-  
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -530,8 +537,12 @@ align-items: center;
 }
 
 .tieude{
-  border-radius: 20px;
-  
+  border: 5px;
+  background-color: white;
+  width: 100%;
+  float: left;
+  padding-bottom: 100px;
+
 }
 
 .quantity{
@@ -539,32 +550,37 @@ align-items: center;
 }
 
 .motasp {
-   
-   width:100%;
+  width:100%;
   float: left;
 }
 .chitietsp{
-  width: 400px;
- float: left;
+  width: 100%;
+  text-align: left;
+  border: 3px;
+  background-color: white;
+  padding-left: 25px;
 }
 
 .chitietsp p{
-  float:left;
+  text-align: left;
   font-size: 1rem;
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .chitietsp h2{
-  float:left;
+  text-align: left;
 }
 
 
 
 .splq h5{
     float:left;
+    margin-top: 20px;
 }
 
-
+.productdetail{
+  margin-bottom:  15px;
+}
 
 
 .thegioiphaidep{
@@ -597,6 +613,7 @@ align-items: center;
   background-color: aliceblue;
   margin:0 auto;
   padding-left: 15px;
+  
 
 }
 
@@ -1058,7 +1075,7 @@ height: 100%;
 }
 
 .button-38 {
-  background-color: #FFFFFF;
+  background-color: lightgrey;
   border: 0;
   border-radius: .5rem;
   box-sizing: border-box;
@@ -1071,7 +1088,6 @@ height: 100%;
   text-align: center;
   text-decoration: none #D1D5DB solid;
   text-decoration-thickness: auto;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   cursor: pointer;
   user-select: none;
   -webkit-user-select: none;
@@ -1080,7 +1096,7 @@ height: 100%;
 }
 
 .button-38:hover {
-  background-color: rgb(249,250,251);
+  background-color: rgb(92, 167, 242);
 }
 
 .button-38:focus {

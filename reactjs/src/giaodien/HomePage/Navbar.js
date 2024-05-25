@@ -33,11 +33,11 @@ export default function Navbar(){
    
     return(
         <>
-        <div id="">
+        <div id="" style={{backgroundColor:'lightgrey'}}>
         <div>
         <ul id="header">
           <li><Link to="/">Giới thiệu</Link></li>
-          <li><Link to="/">Góc cửa hàng</Link></li>
+          <li><Link to="/DressDesign">Blog</Link></li>
           <li id="down1">
             <Link to="/">Sản phẩm <AiFillCaretDown /></Link>
             <ul id="dc1">
@@ -55,12 +55,7 @@ export default function Navbar(){
               <li><Link to="/category/xahang">Xả hàng</Link></li>
             </ul>
           </li>
-         
-          <li>
-            <Link to="/kiemtradon">CheckOut</Link>
-           </li>
-
-          <li> 
+                   <li> 
             <Link to="/Cart">Giỏ hàng <BsFillCartFill/></Link>
             <div className="cart-count">{slsptgh}</div>
            </li>
