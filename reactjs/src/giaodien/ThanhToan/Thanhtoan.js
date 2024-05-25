@@ -38,7 +38,7 @@ const [phuongxa, setPhuongxa] = useState('');
 
   const [hovaten,sethovaten] = useState("");
   const [diachi,setdiachi] = useState("");
-  const tinhtrangdon= "Chờ duyệt";
+  const tinhtrangdon= "Thanh toán";
   
 
   const [sdt,setsdt] = useState();
@@ -67,9 +67,9 @@ const updateTongcart = (newValue) => {
 
  useEffect(() => {
   if (isCashOnDelivery) {
-    setpttt('thanh toán tiền mặt');
+    setpttt('Thanh toán tiền mặt');
   } else if (isBankTransfer) {
-    setpttt('chuyển khoản ngân hàng');
+    setpttt('Chuyển khoản ngân hàng');
   }
 }, [isCashOnDelivery, isBankTransfer]);
 

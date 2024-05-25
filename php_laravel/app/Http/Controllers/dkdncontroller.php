@@ -104,6 +104,6 @@ class dkdncontroller extends Controller
 
         $delete->delete();
 
-        return response()->json(['message'=>'xóa thành công']);
+        return response()->json(['message'=>'Xóa thành công']);
     }
 }

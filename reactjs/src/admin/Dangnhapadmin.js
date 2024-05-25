@@ -15,12 +15,12 @@ export default function Dangnhapadmin() {
         alert("Login successful");
        navigate('/homeadmin');
       } else {
-        alert("Login failed");
+        alert("Đăng nhập thất bại");
       }
     } catch (error) {
       console.error(error);
       if (error.response && error.response.status === 401) {
-        alert('tài khoản,mật khẩu không chính xác');
+        alert('Tài khoản,mật khẩu không chính xác');
       }
     }
   };

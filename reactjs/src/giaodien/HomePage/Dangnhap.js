@@ -37,7 +37,7 @@ export default function Dangnhap() {
   } catch (error) {
     console.error(error);
     if (error.response && error.response.status === 401) {
-      alert('tài khoản,mật khẩu không chính xác');
+      alert('Tài khoản,mật khẩu không chính xác');
     }
   }
 };
