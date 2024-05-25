@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import '../../App.css'
 import {AiFillCaretDown} from 'react-icons/ai'
 import {BsFillCartFill} from 'react-icons/bs'
-
 import { Link } from "react-router-dom";
 import axios from 'axios';
+import Logo from './NavbarLogo.png';
 
 export default function Navbar(){
 
@@ -33,9 +33,10 @@ export default function Navbar(){
    
     return(
         <>
-        <div id="" style={{backgroundColor:'lightgrey'}}>
+        <div id="" style={{backgroundColor:'lightgrey', borderBottomLeftRadius:'9px', borderBottomRightRadius:'9px'}}>
         <div>
         <ul id="header">
+          <img src = {Logo} className="Logo"/>
           <li><Link to="/">Giới thiệu</Link></li>
           <li><Link to="/DressDesign">Blog</Link></li>
           <li id="down1">

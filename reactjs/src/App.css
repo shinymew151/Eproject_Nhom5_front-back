@@ -62,6 +62,14 @@ ul #dc2 {
   z-index: 10;
 }
 
+.Logo{
+  margin-right: 50px;
+  width: 190px;
+  height: 80px;
+  margin-top: -25px;
+  background: transparent;
+}
+
 ul #dc2 li {
   margin-bottom: 5px;
   float:left;
@@ -85,7 +93,7 @@ ul #dc2 a:hover {
 #header {
   padding-top: 15px;
   height: 60px;
-  padding-right: 40px;
+  padding-right: 230px;
 }
 
 #header li a {
@@ -100,7 +108,7 @@ ul #dc2 a:hover {
 }
 
 #header li a:hover {
-  color: #ff7f50;
+  color: #1842ce;
 }
 
 li {
@@ -159,27 +167,28 @@ ul #dc1 a:hover {
 
 .nd {
   display: flex;
- justify-content: center;
- align-items: center;
+  justify-content: center;
+  align-items: center;
   height: 110px;
-  background-color: #f1f1f1;
-  margin-top: 30px;
-  
+  background-color: white;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .nd h3 {
   font-weight: 600;
   text-align: left;
   font-size: 16px;
-  margin-bottom: 0;
+  margin-top: 0px;
+  margin-left: 14px;
 }
 .icon{
-font-size: 40px;
-color: brown;
+  font-size: 40px;
+  color: brown;
+  padding-top: 10px;
 }
 .nd1 {
-width:290px;
-
-display: flex;
+  width:20px;
+  display: flex;
 }
 
 .nd2{
@@ -191,6 +200,7 @@ display: flex;
   font-weight: 400;
   text-align: left;
   font-size: 14px;
+  margin-left: 14px;
 }
 
 .vay {
@@ -334,12 +344,12 @@ display: flex;
   background-color: aliceblue;
   margin:0 auto;
   padding-left: 15px;
-
+  
 }
 .slidechung{
-overflow-x: scroll;
+  overflow-x: scroll;
   display: flex;
-  width: 100%;
+  width: 70%;
   margin: 0 auto;
   background-color: white;
 }
@@ -382,11 +392,11 @@ overflow-x: scroll;
 
 
 .slidefake{
-  width: 235px;
+  display: block;
+  width: 400px;
   height: 365px;
-  background-color: aliceblue;
+  background-color: whitesmoke;
   margin: 0 auto;
-
   margin-top: 10px;
 }
 .slidefake img{
@@ -450,9 +460,6 @@ color: white;
   width: 33%;
 margin-left: 20px;
   height:100%;
-
- 
- 
 }
 
 
