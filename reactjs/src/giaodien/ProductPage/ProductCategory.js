@@ -21,13 +21,13 @@ export default function ProductCategory(props) {
   return (
     <div>
       <Navbar />
-      <div className="tieudecategory" style={{ display: 'flex', height: 35, marginLeft: 200 }}>
-        <p style={{ color: 'grey' }}><Link to="/"> Trang chủ / </Link></p> <p style={{ color: 'black', fontSize: 18, fontWeight: 550 }}> Bộ sưu tập mới</p>
+      <div className="tieudecategory" style={{ display: 'flex', height: 35, marginLeft: 200}}>
+        <p style={{ color: 'grey', fontSize: 18, fontWeight: 550}}><Link to="/"> Trang chủ / </Link></p> <p style={{ color: 'black', fontSize: 18, fontWeight: 550, marginLeft:'5px' }}> Bộ sưu tập mới</p>
       </div>
       <div className="containercategory" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        <div className="leftcategory" style={{ width: '23%' }}>
+        <div className="leftcategory" style={{ width: '24%' }}>
 
-          <div className="damhmuccategory" style={{ position: "absolute", top: 35, marginTop: 50.5 }}>
+          <div className="damhmuccategory" style={{ position: "absolute", top: 40, marginTop: 52 }}>
             <div className="categorynho" style={{ width: 310 }}>
               <ul class="list-group my-4">
                 <li class="list-group-item"><Link to="/category/sominu"> Sơ mi nữ </Link></li>
@@ -42,8 +42,8 @@ export default function ProductCategory(props) {
           </div>
         </div>
 
-        <div className="rightcategory" style={{ width: '53.5%', marginLeft: 20 }}>
-          <img src="https://cdn.pancake.vn/1/s1440x1024/fwebp/2d/d4/5e/42/7bb34b4e57c87cd3a70611bdd5767704c9c267beb36a9ac787e09a2f.png" style={{ width: '100%', height: 320 }} alt="" />
+        <div className="rightcategory" style={{ width: '53.5%', marginLeft: 20, marginTop:'5px' }}>
+          <img src="https://cdn.pancake.vn/1/s1440x1024/fwebp/2d/d4/5e/42/7bb34b4e57c87cd3a70611bdd5767704c9c267beb36a9ac787e09a2f.png" style={{ width: '100%', height: 340 }} alt="" />
           <div className="categoryproduct">
 
             {

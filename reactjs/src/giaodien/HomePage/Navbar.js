@@ -33,14 +33,14 @@ export default function Navbar(){
    
     return(
         <>
-        <div id="" style={{backgroundColor:'lightgrey', borderBottomLeftRadius:'9px', borderBottomRightRadius:'9px'}}>
+        <div id="" style={{backgroundColor:'rgb(185, 178, 178)', borderBottomLeftRadius:'9px', borderBottomRightRadius:'9px'}}>
         <div>
         <ul id="header">
           <img src = {Logo} className="Logo"/>
           <li><Link to="/">Giới thiệu</Link></li>
           <li><Link to="/DressDesign">Blog</Link></li>
           <li id="down1">
-            <Link to="/">Sản phẩm <AiFillCaretDown /></Link>
+            <Link>Sản phẩm <AiFillCaretDown /></Link>
             <ul id="dc1">
               <li><Link to="/category/sominu">Sơ mi nữ</Link></li>
               <li><Link to="/category/chanvay">Chân váy</Link></li>
@@ -48,7 +48,7 @@ export default function Navbar(){
             </ul>
           </li>
           <li id="down2">
-            <Link to="/">Sản phẩm bán chạy <AiFillCaretDown /></Link>
+            <Link>Sản phẩm bán chạy <AiFillCaretDown /></Link>
             <ul id="dc2">
               <li><Link to="/category/bosuutapmoi">Bộ sưu tập mới</Link></li>
               <li><Link to="/category/somichanvay">Sơ mi chân váy</Link></li>

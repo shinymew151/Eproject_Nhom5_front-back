@@ -1,9 +1,10 @@
-
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom/dist";
 import axios from 'axios';
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import loginimg from './loginimg.jpg';
+import { Link } from "react-router-dom/dist";
 
 export default function Dangnhap() {
   const navigate = useNavigate();
@@ -49,10 +50,12 @@ export default function Dangnhap() {
   return (
     <div>
       <Navbar/>
-<div class="container">
+<div class="container py-4">
+<div class="row g-0 align-items-center">
+<div class="col-lg-6 mb-5 mb-lg-0">
 <div class="panel panel-primary">
     <div class="panel-heading">
-        <h2 class="text-center">Đăng Nhập</h2>
+        <h2 class="text-center" style={{marginLeft:'50px'}}>Đăng Nhập</h2>
     </div>
     <div className="login-form">
     <form onSubmit={handleLogin}>
@@ -72,9 +75,16 @@ export default function Dangnhap() {
         onChange={(e) => setPassword(e.target.value)}
       />
       <br />
-      <button type="submit">Đăng Nhập</button>
+      <button type="submit" className="loginbutton" style={{marginTop:'7px', marginBottom:'7px'}}>Đăng Nhập</button>
+      <Link style={{textDecoration:'none'}} to="/admin/dangnhap">Admin</Link>
     </form>
   </div>
+</div>
+</div>
+
+<div class="col-lg-6 mb-5 mb-lg-0">
+<img src={loginimg} className="loginimage" alt="login" />
+</div>
 </div>
 </div>
     <Footer/>
