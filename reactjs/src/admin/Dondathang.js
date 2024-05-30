@@ -7,7 +7,7 @@ import { AiFillCaretDown } from 'react-icons/ai';
 
 export default function Dondathang() {
   const [dh, setDh] = useState([]);
-
+  const [cart,setcart] = useState([]);
   useEffect(() => {
     fetchData();
   }, []);
@@ -16,16 +16,6 @@ export default function Dondathang() {
     try {
       const response = await axios.get(`${process.env.REACT_APP_BASEURL}/api/dondathang`);
       setDh(response.data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
-  const handleDelete = async (id) => {
-    try {
-      await axios.delete(`${process.env.REACT_APP_BASEURL}/api/admindeletedondathang/${id}`);
-      fetchData();
-      alert('Xóa sản phẩm thành công');
     } catch (error) {
       console.log(error);
     }
@@ -60,7 +50,6 @@ export default function Dondathang() {
               <thead>
                 <tr>
                   <th scope="col">Id</th>
-                  <th scope="col">Sản phẩm</th>
                   <th scope="col">Họ tên</th>
                   <th scope="col">Địa chỉ</th>
                   <th scope="col">Tỉnh</th>
@@ -71,14 +60,13 @@ export default function Dondathang() {
                   <th scope="col">Thời gian đặt hàng</th>
                   <th scope="col">Phương thức thanh toán</th>
                   <th scope="col">Tình trạng đơn hàng</th>
-                  <th scope="col">Xóa</th>
+                  <th> </th>
                 </tr>
               </thead>
               <tbody>
                 {dh.map((donhang) => (
                   <tr key={donhang.id}>
-                    <td>{donhang.id}</td>
-                    <td>{donhang.sanpham}</td>
+                    <td>{donhang.id}</td>                    
                     <td>{donhang.hovaten}</td>
                     <td>{donhang.diachi}</td>
                     <td>{donhang.tinh}</td>
@@ -95,9 +83,9 @@ export default function Dondathang() {
                       </select>
                     </td>
                     <td>
-                      <button onClick={() => handleDelete(donhang.id)}>
-                        <FaTrashAlt />
-                      </button>
+                      <a className= "btn btn-primary btn-sm" href="/homeadmin/dkdn/view" value={donhang.id}>
+                          <i className="fas fa-eye"></i>
+                      </a>
                     </td>
                   </tr>
                 ))}

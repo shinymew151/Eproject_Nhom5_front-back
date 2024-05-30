@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 use Laravel\Sanctum\HasApiTokens;
 class dkdn extends Model
 {
-  use HasApiTokens;
-    public $timestamps = FALSE;
+  // use HasApiTokens;
+    // public $timestamps = FALSE;
     use HasFactory;
     protected $table = 'dkdn';
     protected $primaryKey = 'id';
@@ -23,10 +23,10 @@ class dkdn extends Model
     ];
     public function cart()
     {
-        return $this->hasMany('App\Models\cart');
+        return $this->hasMany(cart::class,'dkdn_id','id');
     }
-    public function dondathang()
+    public function dondathangs()
     {
-        return $this->hasMany(dondathang::class, 'dkdn_id');
+        return $this->hasMany(dondathangs::class, 'dkdn_id');
     }
 }

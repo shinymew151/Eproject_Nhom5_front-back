@@ -538,9 +538,39 @@ align-items: center;
     width:280px;
 }
 
-.quantity input{
-  width: 150px;
+.quantity-container {
+  display: flex;
+  align-items: center;
+  
+  border-radius: 4px; /* Rounded corners */
+  padding: 5px; /* Inner padding for spacing */
 }
+
+.quantity-down,
+.quantity-up {
+  background-color: #f9f9f9; /* Light background color */
+  cursor: pointer; /* Indicate clickable buttons */
+  font-size: 20px;
+  border: none; /* Remove default button border */
+  width: 20px;
+  height: 40px;
+  text-align: center;
+}
+
+.quantity-value {
+  width: 50px;
+  height: 40px;
+  font-size: 20px;
+  
+  text-align: center;
+  padding: 0 5px; /* Add horizontal padding for better alignment */
+}
+
+.quantity-down:hover,
+.quantity-up:hover {
+  background-color: #ddd; /* Slightly darker background on hover */
+}
+
 
 .size-container{
   width: 100%;

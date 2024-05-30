@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\product;
 use App\Models\dkdn;
-use App\Models\dondathang;
+use App\Models\dondathangs;
 use Illuminate\Http\Request;
 
 class dashboardcontroller extends Controller
@@ -17,8 +17,8 @@ class dashboardcontroller extends Controller
     {
     $songuoidung = dkdn::count();
     $sosanpham = product::count();
-    $tongdonhang = dondathang::count();
-    $doanhthu = dondathang::sum('thanhtien');
+    $tongdonhang = dondathangs::count();
+    $doanhthu = dondathangs::sum('thanhtien');
 
        $data = [
         

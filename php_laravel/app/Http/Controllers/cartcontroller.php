@@ -85,9 +85,14 @@ class cartcontroller extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(dkdn $dkdn)
     {
-        //
+        dd($dkdn->cart()->get());
+        return view('homeadmin.cart.detail', [
+        'title' => 'CHI TIẾT ĐƠN HÀNG :' . $dkdn->name,
+        'customer' => $dkdn,
+        'cart' => $dkdn->cart()->get()
+       ]);
     }
 
     /**
@@ -124,7 +129,7 @@ class cartcontroller extends Controller
         $delete = cart::find($id);
         $delete->delete();
 
-        return response()->json(['message' => 'đã xóa sản phầm khỏi giỏ hàng']);
+        return response()->json(['message' => 'Đã xóa sản phầm khỏi giỏ hàng']);
     }
    public function slsptgh($userid){
     $slsptcart= cart::where('dkdn_id',$userid)->count();

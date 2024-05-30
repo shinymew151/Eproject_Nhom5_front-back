@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\dondathang;
+use App\Models\dondathangs;
 
 class dondathangcontroller extends Controller
 {
@@ -14,7 +14,7 @@ class dondathangcontroller extends Controller
      */
     public function index()
     {
-        $dh = dondathang::all();
+        $dh = dondathangs::all();
 
         return response()->json($dh);
     }
@@ -37,7 +37,7 @@ class dondathangcontroller extends Controller
      */
     public function store(Request $request)
     {
-        $ddh = new dondathang();
+        $ddh = new dondathangs();
         $ddh->hovaten = $request['hovaten'];
         $ddh->diachi = $request['diachi'];
         $ddh->tinh = $request['tinh'];
@@ -88,7 +88,7 @@ class dondathangcontroller extends Controller
     public function update(Request $request, $id)
     {
         try {
-            $donhang = dondathang::findOrFail($id);
+            $donhang = dondathangs::findOrFail($id);
             $donhang->tinhtrangdon = $request->input('tinhtrangdon');
             $donhang->save();
     
@@ -109,12 +109,5 @@ class dondathangcontroller extends Controller
     public function destroy($id)
     {
         //
-    }
-    public function deletedondathang($id){
-        $deleteddh = dondathang::where('id',$id)->first();
-
-        $deleteddh->delete();
-
-        return response()->json(['message' => 'xóa success']);
     }
 }

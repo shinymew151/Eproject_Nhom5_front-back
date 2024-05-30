@@ -1,9 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\MOdels\cart;
 use App\Models\product;
-use App\Models\category;
 
 use Illuminate\Http\Request;
 

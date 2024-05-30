@@ -18,9 +18,7 @@ class userscontroller extends Controller
      */
     public function index()
     {
-        $nguoidung = nguoidung::all();
-
-        return response()->json($nguoidung);
+        
     }
 
     /**
@@ -41,14 +39,7 @@ class userscontroller extends Controller
      */
     public function store(Request $request)
     {
-        $user = new nguoidung;
-        $user->name = $request['name'];
-        $user->email = $request['email'];
-        $user->password = $request['password'];
-       
-        $user->save();
-
-        return response()->json([$user],201);
+    
     }
 
     /**
@@ -95,16 +86,4 @@ class userscontroller extends Controller
     {
         //
     }
-
-    public function login(Request $request){
-        
-          $user = User::where('email',$request->email)->first();
-          if(!$user || !Hash::check($request->password,$user->password)){
-            return ["error"=>"email or password is not matched"];
-          }
-          return $user;
-        
-    
-    
-}
 }

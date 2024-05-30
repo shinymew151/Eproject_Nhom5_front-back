@@ -70,6 +70,6 @@ Route::post('/send-mail/{id}', 'App\Http\Controllers\SendMailController@sendMail
 Route::delete('giohang/{userId}/delete-all', 'App\Http\Controllers\cartcontroller@deleteAllItems');
 
 Route::delete('detail_product/{id}', 'App\Http\Controllers\detailcontroller@deletedetailproduct');
-Route::delete('admindeletedondathang/{id}', 'App\Http\Controllers\dondathangcontroller@deletedondathang');
+
 
 

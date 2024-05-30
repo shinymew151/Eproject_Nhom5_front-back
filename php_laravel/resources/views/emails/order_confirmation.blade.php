@@ -17,6 +17,6 @@
     <p>Order Date: {{$order->created_at}}</p>
     <p>Payment Method: {{$order->pttt}}</p>
     <p>Ordered Products: {{$order->sanpham}}</p>
-    <p>tổng tiền: {{$order->thanhtien}}</p>
+    <p>Total amount: {{$order->thanhtien}}</p>
 </body>
 </html>

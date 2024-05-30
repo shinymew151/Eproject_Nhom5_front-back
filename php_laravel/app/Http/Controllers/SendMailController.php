@@ -6,7 +6,7 @@ use PHPMailer\PHPMailer\Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\OrderConfirmation;
-use App\Models\dondathang;
+use App\Models\dondathangs;
 use App\Models\dkdn;
 
 
@@ -18,7 +18,7 @@ class SendMailController extends Controller
      
       $email = dkdn::where('id', $id)->first();
       // Store the order in the database
-      $order = dondathang::with('dkdn')->where('dkdn_id', $id)->orderBy('id','DESC')->first();
+      $order = dondathangs::with('dkdn')->where('dkdn_id', $id)->orderBy('id','DESC')->first();
       $hovaten = $order->hovaten;
       $diachi = $order->diachi;
       $tinh = $order->tinh;

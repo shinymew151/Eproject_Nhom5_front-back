@@ -108,13 +108,6 @@ class productcontroller extends Controller
 
         return response()->json(['message' => 'Product created successfully!']);
     }
-    public function thuocdanhmuc(){
-        $category = category::all();
-     
-
-        
-        return response()->json($category);
-    }
 
     
 }

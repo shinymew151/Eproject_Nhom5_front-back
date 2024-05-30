@@ -152,7 +152,7 @@ export default function Detail() {
 
       if (response.data.message) {
         setMessage(response.data.message);
-        alert("sản phẩm đã có trong giỏ hàng");
+        alert("Sản phẩm đã có trong giỏ hàng");
       } else {
         alert("Đã thêm sản phẩm vào giỏ hàng thành công"); window.location.reload();
 
@@ -160,7 +160,7 @@ export default function Detail() {
 
     } catch (err) {
       if (!userId) {
-        alert('bạn phải đăng nhập để thêm sản phẩm vào giỏ hàng');
+        alert('Bạn phải đăng nhập để thêm sản phẩm vào giỏ hàng');
       }
       else {
         alert("Vui lòng chọn size sản phẩm");
@@ -254,7 +254,7 @@ export default function Detail() {
               <span className='tinhtrang'>Tình trạng: {detail.tinhtrang}</span>
 
               <div className='price-container'>
-                <span name="" style={{ fontSize: 21, color: 'red', marginTop: 0, fontWeight: 500 }} className='price'>giá: {detail.product.gia} đ</span><br></br>
+                <span name="" style={{ fontSize: 21, color: 'red', marginTop: 0, fontWeight: 500 }} className='price'>Giá: {detail.product.gia} đ</span><br></br>
 
                 <div className="size-container">
                   <b style={{ fontSize: 20 }} className='buttonsize'>Size:</b>
@@ -293,11 +293,11 @@ export default function Detail() {
 
 
                 <div className="quantity-container">
-                  <b className='quantity'>
-                    <button onClick={down} style={{ fontSize: 20, width: 20, height: 40, textAlign: 'center', alignItems: 'center', justifyContent: 'center', background: '#f9f9f9', border: '1px solid gray' }}>-</button>
-                    <input style={{ width: 50, height: 40, fontSize: 20, alignItems: 'center', textAlign: 'center', border: '1px solid gray' }} type="text" value={slsp} />
-                    <button onClick={up} style={{ fontSize: 20, width: 20, height: 40, textAlign: 'center', alignItems: 'center', justifyContent: 'center', background: '#f9f9f9', border: '1px solid gray' }}>+</button>
-                  </b>
+                <div class="quantity-container">
+                    <button type="button" class="quantity-down" onClick={down}>-</button>
+                    <input class="quantity-value" value={slsp} />
+                    <button type="button" class="quantity-up" onClick={up}>+</button>
+                </div>
                   <button style={{ border: '1px solid #dd9c3f', fontWeight: 500, color: 'white', width: 210, height: 40, borderRadius: 35, fontSize: 20, background: '#dd9c3f' }}>Thêm vào giỏ hàng</button>
 
 

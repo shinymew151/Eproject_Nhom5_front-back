@@ -48,7 +48,7 @@ export default function Cart() {
     axios.delete(`${process.env.REACT_APP_BASEURL}/api/deletecart/${id}`)
       .then((response) => {
         window.location.reload(); 
-         alert('đã xóa sản phẩm khỏi giỏ hàng');
+         alert('Đã xóa sản phẩm khỏi giỏ hàng');
       })
       .catch((error) => {
         console.log(error);
